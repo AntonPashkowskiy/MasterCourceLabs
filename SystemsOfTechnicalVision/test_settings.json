@@ -1,0 +1,44 @@
+{
+    "image_acquisition": {
+        "sources": [
+            "test_source.jpg"
+        ],
+        "is_parallel_processing": true
+    },
+    "preprocessing": {
+        "filters_chain": [
+            { 
+                "filter_name": "test_filter_1",
+                "filter_parameters": {
+                    "test_parameter": "f1_test_param"
+                } 
+            },
+            {
+                "filter_name": "test_filter_2",
+                "filter_parameters": {
+                    "test_parameter": "f2_test_param"
+                }
+            }
+        ]
+    },
+    "details_extraction": {
+        "methods": [
+            {
+                "name": "detail_extraction_test_method",
+                "parameters": {
+                    "test_parameter": "dem_test_param"
+                }
+            }
+        ]
+    },
+    "detection_and_segmentation": {
+        "methods": [
+            {
+                "name": "detection_test_method",
+                "parameters": {
+                    "test_parameter": "das_test_param"
+                }
+            }
+        ]
+    }
+}

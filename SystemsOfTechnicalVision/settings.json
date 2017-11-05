@@ -1,0 +1,15 @@
+{
+    "image_acquisition": {
+        "sources": [],
+        "is_parallel_processing": false
+    },
+    "preprocessing": {
+        "filters_chain": []
+    },
+    "details_extraction": {
+        "methods": []
+    },
+    "detection_and_segmentation": {
+        "methods": []
+    }
+}
