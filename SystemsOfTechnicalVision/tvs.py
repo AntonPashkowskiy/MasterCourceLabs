@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """System of technical vision class defenition"""
+from sources.image_source import ImageSource
 from tvs_mappers import FILTER_MAPPING,\
     DETAILS_EXTRACTION_METHODS,\
     DETECTION_METHODS
@@ -61,12 +62,15 @@ class TechnicalVisionSystem:
 
     def start_processing(self):
         """Calls when vision system object is ready for processing"""
-        for source in self._sources:
-            filtered_image = self._apply_all_filters(source)
-            image, image_details = self._extract_all_details(filtered_image)
-            image, detected_elements_descriptions =\
-                self._apply_all_detection_methods(image, image_details)
-            self._result_processing_function(image, image_details, detected_elements_descriptions)
+        image_source = ImageSource(self._sources)
+
+        for raw_image in image_source.images():
+            processed_image = self._apply_all_filters(raw_image)
+            processed_image, image_details = self._extract_all_details(processed_image)
+            processed_image, detected_elements_descriptions =\
+                self._apply_all_detection_methods(processed_image, image_details)
+            self._result_processing_function(\
+                raw_image, processed_image, image_details, detected_elements_descriptions)
 
     def _apply_all_filters(self, image):
         for filter_object in self._filters:

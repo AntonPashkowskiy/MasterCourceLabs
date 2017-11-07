@@ -2,6 +2,7 @@
 """System of technical vision builder"""
 from tvs import TechnicalVisionSystem
 
+
 class TechnicalVisionSystemBuilder:
     """TVS builder class"""
     def __init__(self):

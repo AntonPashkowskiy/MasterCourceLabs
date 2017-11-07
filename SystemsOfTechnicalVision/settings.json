@@ -1,10 +1,17 @@
 {
     "image_acquisition": {
-        "sources": [],
+        "sources": [
+            ".\\images\\sources\\"
+        ],
         "is_parallel_processing": false
     },
     "preprocessing": {
-        "filters_chain": []
+        "filters_chain": [
+            {
+                "filter_name": "cv2_gray_filter",
+                "filter_parameters": {}
+            }
+        ]
     },
     "details_extraction": {
         "methods": []
