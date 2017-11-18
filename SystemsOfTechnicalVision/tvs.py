@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """System of technical vision class defenition"""
+import multiprocessing
+from multiprocessing.dummy import Pool as ThreadPool
 from sources.image_source import ImageSource
 from tvs_mappers import FILTER_MAPPING,\
     DETAILS_EXTRACTION_METHODS,\
@@ -73,13 +75,21 @@ class TechnicalVisionSystem:
         if self._preprocessing_function is not None:
             self._preprocessing_function()
 
-        for raw_image in image_source.images():
-            processed_image = self._apply_all_filters(raw_image)
-            processed_image, image_details = self._extract_all_details(processed_image)
-            processed_image, detected_elements_descriptions =\
-                self._apply_all_detection_methods(processed_image, image_details)
-            self._result_processing_function(\
-                raw_image, processed_image, image_details, detected_elements_descriptions)
+        if self._is_parallel_processing:
+            cpu_count = multiprocessing.cpu_count()
+            with ThreadPool(cpu_count) as pool:
+                pool.map(self._process_raw_image, image_source.images())
+        else:
+            for raw_image in image_source.images():
+                self._process_raw_image(raw_image)
+
+    def _process_raw_image(self, raw_image):
+        processed_image = self._apply_all_filters(raw_image)
+        processed_image, image_details = self._extract_all_details(processed_image)
+        processed_image, detected_elements_descriptions =\
+            self._apply_all_detection_methods(processed_image, image_details)
+        self._result_processing_function(\
+            raw_image, processed_image, image_details, detected_elements_descriptions)
 
     def _apply_all_filters(self, image):
         for filter_object in self._filters:

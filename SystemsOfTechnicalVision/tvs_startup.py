@@ -36,7 +36,6 @@ def main():
             .result_processed_by(plates_hl_processing)
 
         if settings["image_acquisition"]["is_parallel_processing"]:
-            print("Parallel processing")
             technical_vision_system_builder.in_parallel()
 
         technical_vision_system = technical_vision_system_builder.build()
