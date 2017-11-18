@@ -1,7 +1,7 @@
 {
     "image_acquisition": {
         "sources": [
-            ".\\data\\images\\sources\\russian_plate_numbers\\"
+            ".\\data\\images\\sources\\faces\\"
         ],
         "is_parallel_processing": false
     },
@@ -9,10 +9,6 @@
         "filters_chain": [
             {
                 "filter_name": "cv2_gray_filter",
-                "filter_parameters": {}
-            },
-            {
-                "filter_name": "cv2_binarization_filter",
                 "filter_parameters": {}
             }
         ]
@@ -23,9 +19,11 @@
     "detection_and_segmentation": {
         "methods": [
             {
-                "name": "plate_number_detection_method",
+                "name": "face_detection_method",
                 "parameters": {
-                    "plate_cascade_path": ".\\data\\training_files\\haar_russian_plate_number.xml"
+                    "face_cascade_path": ".\\data\\training_files\\haar_frontalface.xml",
+                    "eye_cascade_path": ".\\data\\training_files\\haar_eye.xml",
+                    "detect_eyes": false
                 }
             }
         ]

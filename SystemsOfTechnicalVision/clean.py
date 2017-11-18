@@ -5,7 +5,8 @@ import os
 def clean_directory(directory_path):
     for filename in os.listdir(directory_path):
         filepath = os.path.join(directory_path, filename)
-        os.remove(filepath)
+        if not os.path.isdir(filepath):
+            os.remove(filepath)
 
 
 def main():
