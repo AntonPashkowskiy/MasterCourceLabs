@@ -15,6 +15,7 @@ class TechnicalVisionSystem:
         self._detail_extraction_methods = []
         self._detection_methods = []
         self._result_processing_function = lambda image, image_data: image
+        self._preprocessing_function = None
 
     @property
     def is_parrallel_processing(self):
@@ -60,9 +61,17 @@ class TechnicalVisionSystem:
         else:
             raise ValueError("High level result processing function is incorrect")
 
+    def add_preprocessing_function(self, preprocessing_function):
+        """Add high level function calls before image processing"""
+        if preprocessing_function is not None:
+            self._preprocessing_function = preprocessing_function
+
     def start_processing(self):
         """Calls when vision system object is ready for processing"""
         image_source = ImageSource(self._sources)
+
+        if self._preprocessing_function is not None:
+            self._preprocessing_function()
 
         for raw_image in image_source.images():
             processed_image = self._apply_all_filters(raw_image)

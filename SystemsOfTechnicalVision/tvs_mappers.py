@@ -4,6 +4,7 @@ from filters.sample_filter import sample_filter
 from filters.cv2_gray_filter import cv2_gray_filter
 from details_extraction.sample_details_extraction import sample_details_extraction
 from detection.sample_detection_method import sample_detection_method
+from detection.face_detection_method import face_detection_method
 
 
 FILTER_MAPPING = {
@@ -19,5 +20,6 @@ DETAILS_EXTRACTION_METHODS = {
 
 
 DETECTION_METHODS = {
-    "detection_test_method": sample_detection_method
+    "detection_test_method": sample_detection_method,
+    "face_detection_method": face_detection_method
 }

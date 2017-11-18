@@ -56,6 +56,11 @@ class TechnicalVisionSystemBuilder:
         self._technical_vision_system.add_result_processing_function(result_processing_function)
         return self
 
+    def with_preprocessing(self, preprocessing_function):
+        """Determines function which calls before image processing started"""
+        self._technical_vision_system.add_preprocessing_function(preprocessing_function)
+        return self
+
     def build(self):
         """Returns ready-for-start technical vision system object"""
         return self._technical_vision_system

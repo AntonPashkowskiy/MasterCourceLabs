@@ -1,7 +1,7 @@
 {
     "image_acquisition": {
         "sources": [
-            ".\\images\\sources\\"
+            ".\\data\\images\\sources\\faces\\"
         ],
         "is_parallel_processing": false
     },
@@ -17,6 +17,15 @@
         "methods": []
     },
     "detection_and_segmentation": {
-        "methods": []
+        "methods": [
+            {
+                "name": "face_detection_method",
+                "parameters": {
+                    "face_cascade_path": ".\\data\\training_files\\haar_frontalface.xml",
+                    "eye_cascade_path": ".\\data\\training_files\\haar_eye.xml",
+                    "detect_eyes": false
+                }
+            }
+        ]
     }
 }
