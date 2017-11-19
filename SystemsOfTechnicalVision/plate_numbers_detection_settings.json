@@ -1,0 +1,36 @@
+{
+    "image_acquisition": {
+        "sources": [
+            ".\\data\\images\\sources\\russian_plate_numbers\\"
+        ],
+        "is_parallel_processing": false
+    },
+    "preprocessing": {
+        "filters_chain": [
+            {
+                "filter_name": "cv2_gray_filter",
+                "filter_parameters": {}
+            },
+            {
+                "filter_name": "cv2_binarization_filter",
+                "filter_parameters": {
+                    "lower_threshold": 127,
+                    "upper_threshold": 255
+                }
+            }
+        ]
+    },
+    "details_extraction": {
+        "methods": []
+    },
+    "detection_and_segmentation": {
+        "methods": [
+            {
+                "name": "plate_number_detection_method",
+                "parameters": {
+                    "plate_cascade_path": ".\\data\\training_files\\haar_russian_plate_number.xml"
+                }
+            }
+        ]
+    }
+}

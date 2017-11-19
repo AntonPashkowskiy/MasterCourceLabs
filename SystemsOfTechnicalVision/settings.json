@@ -1,7 +1,7 @@
 {
     "image_acquisition": {
         "sources": [
-            ".\\data\\images\\sources\\russian_plate_numbers\\"
+            ".\\data\\images\\sources\\barcodes\\"
         ],
         "is_parallel_processing": false
     },
@@ -12,22 +12,54 @@
                 "filter_parameters": {}
             },
             {
+                "filter_name": "cv2_sobel_filter",
+                "filter_parameters": {
+                    "extract_gradient": "vertical"
+                }
+            },
+            {
+                "filter_name": "cv2_blur_filter",
+                "filter_parameters": {
+                    "radius": 9
+                }
+            },
+            {
                 "filter_name": "cv2_binarization_filter",
-                "filter_parameters": {}
+                "filter_parameters": {
+                    "lower_threshold": 225,
+                    "upper_threshold": 255
+                }
+            },
+            {
+                "filter_name": "cv2_morphology_close_filter",
+                "filter_parameters": {
+                    "kernel_rectangle_width": 21,
+                    "kernel_rectangle_height": 7
+                }
+            },
+            {
+                "filter_name": "cv2_erode_filter",
+                "filter_parameters": {
+                    "iterations_count": 4
+                }
+            },
+            {
+                "filter_name": "cv2_dilate_filter",
+                "filter_parameters": {
+                    "iterations_count": 4
+                }
             }
         ]
     },
     "details_extraction": {
-        "methods": []
-    },
-    "detection_and_segmentation": {
         "methods": [
             {
-                "name": "plate_number_detection_method",
-                "parameters": {
-                    "plate_cascade_path": ".\\data\\training_files\\haar_russian_plate_number.xml"
-                }
+                "name": "extract_largest_contour",
+                "parameters": {}
             }
         ]
+    },
+    "detection_and_segmentation": {
+        "methods": []
     }
 }

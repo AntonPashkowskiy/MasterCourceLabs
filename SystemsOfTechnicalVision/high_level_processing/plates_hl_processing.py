@@ -5,6 +5,7 @@ from high_level_processing.common import save_to_output_directory
 
 
 def plates_hl_processing(raw_image, processed_image, image_details, detection_results):
+    """High-level function for russian number plates processing"""
     _, detected_plates = detection_results[0]
 
     for x, y, width, height in detected_plates:
