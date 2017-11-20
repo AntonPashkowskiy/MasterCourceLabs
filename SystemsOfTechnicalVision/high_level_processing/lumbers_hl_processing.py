@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """TVS lumbers vulume calculating high-level processing"""
 import cv2
+import numpy as np
 from high_level_processing.common import save_to_output_directory
 
 

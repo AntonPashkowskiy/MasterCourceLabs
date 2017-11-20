@@ -15,9 +15,6 @@ def cv2_hsv_color_range_filter(hvs_image, filter_parameters):
     lower_color = _get_color_from_parameter(lower_threshold)
     upper_color = _get_color_from_parameter(upper_threshold)
 
-    print(lower_color)
-    print(upper_color)
-
     return cv2.inRange(hvs_image, lower_color, upper_color)
 
 

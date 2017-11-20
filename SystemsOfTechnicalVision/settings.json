@@ -8,14 +8,33 @@
     "preprocessing": {
         "filters_chain": [
             {
-                "filter_name": "cv2_hsv_filter",
+                "filter_name": "cv2_gray_filter",
                 "filter_parameters": {}
             },
             {
-                "filter_name": "cv2_hsv_color_range_filter",
+                "filter_name": "cv2_binarization_filter",
                 "filter_parameters": {
-                    "lower_color": "27,48,0",
-                    "upper_color": "27,93,100"
+                    "lower_threshold": 115,
+                    "upper_threshold": 255
+                }
+            },
+            {
+                "filter_name": "cv2_blur_filter",
+                "filter_parameters": {
+                    "radius": 9
+                }
+            },
+            {
+                "filter_name": "cv2_dilate_filter",
+                "filter_parameters": {
+                    "iterations_count": 5
+                }
+            },
+            {
+                "filter_name": "cv2_binarization_filter",
+                "filter_parameters": {
+                    "lower_threshold": 125,
+                    "upper_threshold": 255
                 }
             }
         ]
