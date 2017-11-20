@@ -8,6 +8,8 @@ from filters.cv2_blur_filter import cv2_blur_filter
 from filters.cv2_morphology_close_filter import cv2_morphology_close_filter
 from filters.cv2_erode_filter import cv2_erode_filter
 from filters.cv2_dilate_filter import cv2_dilate_filter
+from filters.cv2_hsv_filter import cv2_hsv_filter
+from filters.cv2_hsv_color_range_filter import cv2_hsv_color_range_filter
 from details_extraction.sample_details_extraction import sample_details_extraction
 from details_extraction.extract_largest_contour import extract_largest_contour
 from detection.sample_detection_method import sample_detection_method
@@ -24,7 +26,9 @@ FILTER_MAPPING = {
     "cv2_blur_filter": cv2_blur_filter,
     "cv2_morphology_close_filter": cv2_morphology_close_filter,
     "cv2_erode_filter": cv2_erode_filter,
-    "cv2_dilate_filter": cv2_dilate_filter
+    "cv2_dilate_filter": cv2_dilate_filter,
+    "cv2_hsv_filter": cv2_hsv_filter,
+    "cv2_hsv_color_range_filter": cv2_hsv_color_range_filter
 }
 
 

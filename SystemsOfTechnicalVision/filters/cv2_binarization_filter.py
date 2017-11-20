@@ -5,6 +5,9 @@ import cv2
 
 def cv2_binarization_filter(gray_image, filter_parameters):
     """RGB to gray filter"""
+    if "lower_threshold" not in filter_parameters or "upper_threshold" not in filter_parameters:
+        raise ValueError("Thresholds was not specified for binarization filters.")
+
     lower_threshold = filter_parameters["lower_threshold"]
     upper_threshold = filter_parameters["upper_threshold"]
 
