@@ -40,7 +40,14 @@
         ]
     },
     "details_extraction": {
-        "methods": []
+        "methods": [
+            {
+                "name": "white_area_size",
+                "parameters": {
+                    "scale": 1000
+                }
+            }
+        ]
     },
     "detection_and_segmentation": {
         "methods": []
