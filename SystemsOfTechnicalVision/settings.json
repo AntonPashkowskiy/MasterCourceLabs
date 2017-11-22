@@ -1,9 +1,12 @@
 {
+    "common_settings": {
+        "is_parallel_processing": true,
+        "is_intermediate_results_saves": true
+    },
     "image_acquisition": {
         "sources": [
             ".\\data\\images\\sources\\smiles\\"
-        ],
-        "is_parallel_processing": true
+        ]
     },
     "preprocessing": {
         "filters_chain": [

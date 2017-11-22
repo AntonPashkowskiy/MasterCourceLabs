@@ -1,9 +1,12 @@
 {
+    "common_settings": {
+        "is_parallel_processing": true,
+        "is_intermediate_results_saves": false
+    },
     "image_acquisition": {
         "sources": [
             ".\\data\\images\\sources\\faces\\"
-        ],
-        "is_parallel_processing": false
+        ]
     },
     "preprocessing": {
         "filters_chain": [

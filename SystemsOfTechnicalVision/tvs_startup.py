@@ -35,8 +35,11 @@ def main():
             .with_detection_methods(settings["detection_and_segmentation"]["methods"])\
             .result_processed_by(smiles_hl_processing)
 
-        if settings["image_acquisition"]["is_parallel_processing"]:
+        if settings["common_settings"]["is_parallel_processing"]:
             technical_vision_system_builder.in_parallel()
+
+        if settings["common_settings"]["is_intermediate_results_saves"]:
+            technical_vision_system_builder.save_intermediate_results()
 
         technical_vision_system = technical_vision_system_builder.build()
         technical_vision_system.start_processing()

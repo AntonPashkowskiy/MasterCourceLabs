@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 """System of technical vision class defenition"""
 import multiprocessing
+import uuid
 from multiprocessing.dummy import Pool as ThreadPool
+from high_level_processing.common import save_filtered_image
 from sources.image_source import ImageSource
 from tvs_mappers import FILTER_MAPPING,\
     DETAILS_EXTRACTION_METHODS,\
@@ -12,6 +14,7 @@ class TechnicalVisionSystem:
     """TVS class"""
     def __init__(self):
         self._is_parallel_processing = False
+        self._is_intermediate_results_saves = False
         self._sources = []
         self._filters = []
         self._detail_extraction_methods = []
@@ -27,6 +30,15 @@ class TechnicalVisionSystem:
     @is_parrallel_processing.setter
     def is_parrallel_processing(self, value):
         self._is_parallel_processing = value
+
+    @property
+    def is_intermediate_results_saves(self):
+        """Determines that images saves on all processing steps"""
+        return self._is_intermediate_results_saves
+
+    @is_intermediate_results_saves.setter
+    def is_intermediate_results_saves(self, value):
+        self._is_intermediate_results_saves = value
 
     def add_sources(self, sources):
         """Add an image sources to system"""
@@ -88,14 +100,22 @@ class TechnicalVisionSystem:
         processed_image, image_details = self._extract_all_details(processed_image)
         processed_image, detected_elements_descriptions =\
             self._apply_all_detection_methods(processed_image, image_details)
-        self._result_processing_function(\
+        self._result_processing_function(
             raw_image, processed_image, image_details, detected_elements_descriptions)
 
     def _apply_all_filters(self, image):
+        filtered_image = image.copy()
+        unique_directory_name = str(uuid.uuid4())
+
         for filter_object in self._filters:
-            filter_function = FILTER_MAPPING[filter_object["filter_name"]]
-            image = filter_function(image, filter_object["filter_parameters"])
-        return image
+            filter_name = filter_object["filter_name"]
+            filter_function = FILTER_MAPPING[filter_name]
+            filtered_image = filter_function(filtered_image, filter_object["filter_parameters"])
+
+            if self._is_intermediate_results_saves:
+                save_filtered_image(filtered_image, unique_directory_name, filter_name)
+
+        return filtered_image
 
     def _extract_all_details(self, image):
         details_container = []

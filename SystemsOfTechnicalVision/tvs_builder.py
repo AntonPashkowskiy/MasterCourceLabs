@@ -13,9 +13,14 @@ class TechnicalVisionSystemBuilder:
         self._technical_vision_system.is_parrallel_processing = True
         return self
 
+    def save_intermediate_results(self):
+        """Save image after all steps of processing"""
+        self._technical_vision_system.is_intermediate_results_saves = True
+
     def from_source(self, source):
         """Applies single source to target vision system"""
         self._technical_vision_system.add_sources([source])
+        return self
 
     def from_sources(self, sources):
         """Applies image sources to target vision system"""
@@ -25,6 +30,7 @@ class TechnicalVisionSystemBuilder:
     def with_filter(self, filter_name):
         """Determines single filter for target vision system"""
         self._technical_vision_system.add_filters([filter_name])
+        return self
 
     def with_filters(self, filters):
         """Determines filters chain for target vision system"""
