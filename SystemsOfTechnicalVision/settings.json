@@ -1,34 +1,15 @@
 {
     "image_acquisition": {
         "sources": [
-            ".\\data\\images\\sources\\lumbers\\"
+            ".\\data\\images\\sources\\smiles\\"
         ],
-        "is_parallel_processing": false
+        "is_parallel_processing": true
     },
     "preprocessing": {
         "filters_chain": [
             {
                 "filter_name": "cv2_gray_filter",
                 "filter_parameters": {}
-            },
-            {
-                "filter_name": "cv2_binarization_filter",
-                "filter_parameters": {
-                    "lower_threshold": 115,
-                    "upper_threshold": 255
-                }
-            },
-            {
-                "filter_name": "cv2_blur_filter",
-                "filter_parameters": {
-                    "radius": 9
-                }
-            },
-            {
-                "filter_name": "cv2_dilate_filter",
-                "filter_parameters": {
-                    "iterations_count": 5
-                }
             },
             {
                 "filter_name": "cv2_binarization_filter",
@@ -40,16 +21,16 @@
         ]
     },
     "details_extraction": {
+        "methods": []
+    },
+    "detection_and_segmentation": {
         "methods": [
             {
-                "name": "white_area_size",
+                "name": "smile_detection_method",
                 "parameters": {
-                    "scale": 1000
+                    "smile_cascade_path": ".\\data\\training_files\\haar_smile.xml"
                 }
             }
         ]
-    },
-    "detection_and_segmentation": {
-        "methods": []
     }
 }

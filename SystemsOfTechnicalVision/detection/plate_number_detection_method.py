@@ -5,6 +5,9 @@ import cv2
 
 def plate_number_detection_method(image_data, image_details, method_parameters):
     """Russian plate numbers detection method via OpenCV"""
+    if "plate_cascade_path" not in method_parameters:
+        raise ValueError("Plate cascade not defined for the plates detection method.")
+
     plates_cascade_path = method_parameters["plate_cascade_path"]
     plate_cascade = cv2.CascadeClassifier(plates_cascade_path)
     scale_factor = 1.3

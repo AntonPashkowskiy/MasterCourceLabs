@@ -4,7 +4,7 @@ import argparse
 import json
 from tvs_builder import TechnicalVisionSystemBuilder
 from high_level_processing.preprocessing import clean_output_directory
-from high_level_processing.lumbers_hl_processing import lumbers_hl_processing
+from high_level_processing.smiles_hl_processing import smiles_hl_processing
 
 
 def _parse_arguments():
@@ -33,7 +33,7 @@ def main():
             .with_filters(settings["preprocessing"]["filters_chain"])\
             .with_details_extraction_methods(settings["details_extraction"]["methods"])\
             .with_detection_methods(settings["detection_and_segmentation"]["methods"])\
-            .result_processed_by(lumbers_hl_processing)
+            .result_processed_by(smiles_hl_processing)
 
         if settings["image_acquisition"]["is_parallel_processing"]:
             technical_vision_system_builder.in_parallel()

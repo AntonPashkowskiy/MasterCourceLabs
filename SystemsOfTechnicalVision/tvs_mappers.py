@@ -16,6 +16,7 @@ from details_extraction.white_area_size import white_area_size
 from detection.sample_detection_method import sample_detection_method
 from detection.face_detection_method import face_detection_method
 from detection.plate_number_detection_method import plate_number_detection_method
+from detection.smile_detection_method import smile_detection_method
 
 
 FILTER_MAPPING = {
@@ -43,5 +44,6 @@ DETAILS_EXTRACTION_METHODS = {
 DETECTION_METHODS = {
     "detection_test_method": sample_detection_method,
     "face_detection_method": face_detection_method,
-    "plate_number_detection_method": plate_number_detection_method
+    "plate_number_detection_method": plate_number_detection_method,
+    "smile_detection_method": smile_detection_method
 }
