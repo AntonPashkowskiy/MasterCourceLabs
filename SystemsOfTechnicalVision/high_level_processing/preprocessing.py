@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """TVS high-level preprocessing"""
 import os
+from shutil import rmtree
 
 
 def clean_output_directory():
@@ -8,4 +9,7 @@ def clean_output_directory():
     directory_path = os.path.join(".", "data", "images", "results")
     for filename in os.listdir(directory_path):
         filepath = os.path.join(directory_path, filename)
-        os.remove(filepath)
+        if os.path.isfile(filepath):
+            os.remove(filepath)
+        else:
+            rmtree(filepath)
