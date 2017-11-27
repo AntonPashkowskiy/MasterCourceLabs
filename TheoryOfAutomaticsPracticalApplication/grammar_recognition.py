@@ -24,8 +24,11 @@ def main():
     args = _parse_arguments()
     with open(args.source) as json_file:
         grammar_data = json.load(json_file)
-        grammar = Grammar.get_grammar(grammar_data)
-        print(grammar.grammar_type.value)
+        try:
+            grammar = Grammar.get_grammar(grammar_data)
+            print(grammar.grammar_type.value)
+        except ValueError error:
+            print(error)
 
 
 if __name__ == "__main__":
