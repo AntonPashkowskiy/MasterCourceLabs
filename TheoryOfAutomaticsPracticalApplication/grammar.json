@@ -1,0 +1,8 @@
+{
+    "terminals": "abcd",
+    "nonterminals": "A",
+    "rules": [
+        "A->Ab"
+    ],
+    "start_symbol": "A"
+}
