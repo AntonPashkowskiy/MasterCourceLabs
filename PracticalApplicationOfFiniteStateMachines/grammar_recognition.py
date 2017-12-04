@@ -8,7 +8,7 @@ from utils.grammar import Grammar
 def _parse_arguments():
     parser = argparse.ArgumentParser(
         description="Grammar recognition.",
-        prog="tvs")
+        prog="gr")
     parser.add_argument(
         "-s",
         "--source",
