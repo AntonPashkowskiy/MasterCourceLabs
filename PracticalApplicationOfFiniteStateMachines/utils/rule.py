@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from utils.grammar import EMPTY_SEQUNCE
+EMPTY_SEQUNCE = 'ε'
 
 
 class Rule:

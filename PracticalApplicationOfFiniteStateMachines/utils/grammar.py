@@ -2,7 +2,6 @@
 from itertools import chain
 from collections import namedtuple
 from enum import Enum
-from utils.grammar_defenitions import Rule, EMPTY_SEQUNCE, GrammarType
 from utils.rule import Rule
 
 

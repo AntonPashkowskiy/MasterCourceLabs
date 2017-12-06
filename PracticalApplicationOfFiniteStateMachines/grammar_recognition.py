@@ -27,7 +27,7 @@ def main():
         try:
             grammar = Grammar.get_grammar(grammar_data)
             print(grammar.grammar_type.value)
-        except ValueError error:
+        except ValueError as error:
             print(error)
 
 
