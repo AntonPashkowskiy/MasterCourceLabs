@@ -1,8 +1,10 @@
 {
-    "terminals": "abcd",
-    "nonterminals": "A",
+    "terminals": "abc1ε",
+    "nonterminals": "ABS",
     "rules": [
-        "A->Ab"
+        "S->abA|Bcb|1",
+        "A->abS|ε",
+        "B->Scb|ε"
     ],
-    "start_symbol": "A"
+    "start_symbol": "S"
 }
