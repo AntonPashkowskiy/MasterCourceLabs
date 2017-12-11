@@ -1,0 +1,11 @@
+{
+    "terminals": "abc",
+    "nonterminals": "SABC",
+    "rules": [
+        "S->aA|bB|aC",
+        "A->bA|bB|c",
+        "B->aA|cC|b",
+        "C->bB|bC|a"
+    ],
+    "start_symbol": "S"
+}
