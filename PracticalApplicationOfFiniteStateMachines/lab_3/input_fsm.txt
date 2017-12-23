@@ -1,0 +1,21 @@
+automata
+    states A B C D E F G H I J
+    start A
+    input_symbols a b c d & % ~
+    rule A c C
+    rule C a E
+    rule C b G
+    rule C c F
+    rule B d C
+    rule D d C
+    rule E ~ B
+    rule E % I
+    rule F % I
+    rule F & C
+    rule G ~ D
+    rule G % I
+    rule J a G
+    rule J b I
+    rule H b E
+    rule H a I
+end
