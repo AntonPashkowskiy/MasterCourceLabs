@@ -1,436 +1,3048 @@
 START level: 0
-Accepted transitions: (('q', '$', None), ('q', '$'))
-Input sequence: '$y$'
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n*n'
 Stack: ['_']
 
 START level: 1
-Accepted transitions: (('q', None, ('$',)), ('q', 'Y'))
-(('q', 'y', None), ('q', 'y'))
-Input sequence: 'y$'
-Stack: ['_', '$']
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'n']
 
 START level: 2
-Accepted transitions: (('q', None, ('Y',)), ('q', 'S'))
-(('q', 'y', None), ('q', 'y'))
-Input sequence: 'y$'
-Stack: ['_', 'Y']
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'F']
 
 START level: 3
-Accepted transitions: (('q', '$', None), ('q', '$'))
-Input sequence: '$'
-Stack: ['_', 'Y', 'y']
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'T']
 
 START level: 4
-Accepted transitions: (('q', None, ('Y', 'y', '$')), ('q', 'Y'))
-(('q', None, ('$',)), ('q', 'Y'))
-Input sequence: ''
-Stack: ['_', 'Y', 'y', '$']
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'T', '*']
 
 START level: 5
-Accepted transitions: (('q', None, ('Y',)), ('q', 'S'))
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
 Input sequence: ''
-Stack: ['_', 'Y', 'y', 'Y']
+Stack: ['_', 'T', '*', 'n']
 
 START level: 6
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'T', '*', 'F']
+
+START level: 7
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'T', '*', 'T']
+
+START level: 8
 Accepted transitions: 
 Input sequence: ''
-Stack: ['_', 'Y', 'y', 'S']
+Stack: ['_', 'T', '*', 'E']
 
-START level: 5
-Accepted transitions: (('q', None, ('Y',)), ('q', 'S'))
-Input sequence: ''
-Stack: ['_', 'Y']
-
-START level: 6
-Accepted transitions: (('q', None, ('_', 'S')), ('r', None))
-Input sequence: ''
-Stack: ['_', 'S']
+START level: 4
+Accepted transitions: (('q', None, ('_', 'E')), ('r', None))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'E']
 
 START level: 0
-Accepted transitions: (('q', 'x', None), ('q', 'x'))
-Input sequence: 'xxxxx$y$'
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n*n'
 Stack: ['_']
 
 START level: 1
-Accepted transitions: (('q', 'x', None), ('q', 'x'))
-Input sequence: 'xxxx$y$'
-Stack: ['_', 'x']
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'n']
 
 START level: 2
-Accepted transitions: (('q', 'x', None), ('q', 'x'))
-Input sequence: 'xxx$y$'
-Stack: ['_', 'x', 'x']
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'n', '*']
 
 START level: 3
-Accepted transitions: (('q', 'x', None), ('q', 'x'))
-Input sequence: 'xx$y$'
-Stack: ['_', 'x', 'x', 'x']
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'n']
 
 START level: 4
-Accepted transitions: (('q', 'x', None), ('q', 'x'))
-Input sequence: 'x$y$'
-Stack: ['_', 'x', 'x', 'x', 'x']
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'F']
 
 START level: 5
-Accepted transitions: (('q', '$', None), ('q', '$'))
-Input sequence: '$y$'
-Stack: ['_', 'x', 'x', 'x', 'x', 'x']
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'T']
 
 START level: 6
-Accepted transitions: (('q', None, ('$',)), ('q', 'Y'))
-(('q', 'y', None), ('q', 'y'))
-Input sequence: 'y$'
-Stack: ['_', 'x', 'x', 'x', 'x', 'x', '$']
-
-START level: 7
-Accepted transitions: (('q', None, ('Y',)), ('q', 'S'))
-(('q', 'y', None), ('q', 'y'))
-Input sequence: 'y$'
-Stack: ['_', 'x', 'x', 'x', 'x', 'x', 'Y']
-
-START level: 8
-Accepted transitions: (('q', '$', None), ('q', '$'))
-Input sequence: '$'
-Stack: ['_', 'x', 'x', 'x', 'x', 'x', 'Y', 'y']
-
-START level: 9
-Accepted transitions: (('q', None, ('Y', 'y', '$')), ('q', 'Y'))
-(('q', None, ('$',)), ('q', 'Y'))
-Input sequence: ''
-Stack: ['_', 'x', 'x', 'x', 'x', 'x', 'Y', 'y', '$']
-
-START level: 10
-Accepted transitions: (('q', None, ('Y',)), ('q', 'S'))
-Input sequence: ''
-Stack: ['_', 'x', 'x', 'x', 'x', 'x', 'Y', 'y', 'Y']
-
-START level: 11
 Accepted transitions: 
 Input sequence: ''
-Stack: ['_', 'x', 'x', 'x', 'x', 'x', 'Y', 'y', 'S']
+Stack: ['_', 'n', '*', 'E']
 
-START level: 10
-Accepted transitions: (('q', None, ('Y',)), ('q', 'S'))
-Input sequence: ''
-Stack: ['_', 'x', 'x', 'x', 'x', 'x', 'Y']
+START level: 2
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'F']
 
-START level: 11
-Accepted transitions: 
-Input sequence: ''
-Stack: ['_', 'x', 'x', 'x', 'x', 'x', 'S']
+START level: 3
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'T']
 
-START level: 8
-Accepted transitions: (('q', 'y', None), ('q', 'y'))
-Input sequence: 'y$'
-Stack: ['_', 'x', 'x', 'x', 'x', 'x', 'S']
-
-START level: 9
-Accepted transitions: (('q', '$', None), ('q', '$'))
-Input sequence: '$'
-Stack: ['_', 'x', 'x', 'x', 'x', 'x', 'S', 'y']
-
-START level: 10
-Accepted transitions: (('q', None, ('$',)), ('q', 'Y'))
-Input sequence: ''
-Stack: ['_', 'x', 'x', 'x', 'x', 'x', 'S', 'y', '$']
-
-START level: 11
-Accepted transitions: (('q', None, ('Y',)), ('q', 'S'))
-Input sequence: ''
-Stack: ['_', 'x', 'x', 'x', 'x', 'x', 'S', 'y', 'Y']
-
-START level: 12
-Accepted transitions: 
-Input sequence: ''
-Stack: ['_', 'x', 'x', 'x', 'x', 'x', 'S', 'y', 'S']
-
-START level: 7
-Accepted transitions: (('q', '$', None), ('q', '$'))
-Input sequence: '$'
-Stack: ['_', 'x', 'x', 'x', 'x', 'x', '$', 'y']
-
-START level: 8
-Accepted transitions: (('q', None, ('$',)), ('q', 'Y'))
-Input sequence: ''
-Stack: ['_', 'x', 'x', 'x', 'x', 'x', '$', 'y', '$']
-
-START level: 9
-Accepted transitions: (('q', None, ('Y',)), ('q', 'S'))
-Input sequence: ''
-Stack: ['_', 'x', 'x', 'x', 'x', 'x', '$', 'y', 'Y']
-
-START level: 10
-Accepted transitions: 
-Input sequence: ''
-Stack: ['_', 'x', 'x', 'x', 'x', 'x', '$', 'y', 'S']
+START level: 4
+Accepted transitions: (('q', None, ('_', 'E')), ('r', None))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'E']
 
 START level: 0
-Accepted transitions: (('q', 'x', None), ('q', 'x'))
-Input sequence: 'x#x#$z$y$'
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h+h+h+h*n'
 Stack: ['_']
 
 START level: 1
-Accepted transitions: (('q', '#', None), ('q', '#'))
-Input sequence: '#x#$z$y$'
-Stack: ['_', 'x']
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+h+h+h*n'
+Stack: ['_', 'h']
 
 START level: 2
-Accepted transitions: (('q', 'x', None), ('q', 'x'))
-Input sequence: 'x#$z$y$'
-Stack: ['_', 'x', '#']
+Accepted transitions: (('q', '+', None), ('q', '+'))
+Input sequence: '+h+h+h*n'
+Stack: ['_', 'H']
 
 START level: 3
-Accepted transitions: (('q', '#', None), ('q', '#'))
-Input sequence: '#$z$y$'
-Stack: ['_', 'x', '#', 'x']
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h+h+h*n'
+Stack: ['_', 'H', '+']
 
 START level: 4
-Accepted transitions: (('q', '$', None), ('q', '$'))
-Input sequence: '$z$y$'
-Stack: ['_', 'x', '#', 'x', '#']
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+h+h*n'
+Stack: ['_', 'H', '+', 'h']
 
 START level: 5
-Accepted transitions: (('q', None, ('$',)), ('q', 'Y'))
-(('q', 'z', None), ('q', 'z'))
-Input sequence: 'z$y$'
-Stack: ['_', 'x', '#', 'x', '#', '$']
+Accepted transitions: (('q', '+', None), ('q', '+'))
+Input sequence: '+h+h*n'
+Stack: ['_', 'H', '+', 'H']
 
 START level: 6
-Accepted transitions: (('q', None, ('x', '#', 'Y')), ('q', 'X'))
-(('q', None, ('Y',)), ('q', 'S'))
-(('q', 'z', None), ('q', 'z'))
-Input sequence: 'z$y$'
-Stack: ['_', 'x', '#', 'x', '#', 'Y']
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h+h*n'
+Stack: ['_', 'H', '+', 'H', '+']
 
 START level: 7
-Accepted transitions: (('q', 'z', None), ('q', 'z'))
-Input sequence: 'z$y$'
-Stack: ['_', 'x', '#', 'x', '#', 'S']
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+h*n'
+Stack: ['_', 'H', '+', 'H', '+', 'h']
 
 START level: 8
-Accepted transitions: (('q', '$', None), ('q', '$'))
-Input sequence: '$y$'
-Stack: ['_', 'x', '#', 'x', '#', 'S', 'z']
+Accepted transitions: (('q', '+', None), ('q', '+'))
+Input sequence: '+h*n'
+Stack: ['_', 'H', '+', 'H', '+', 'H']
 
 START level: 9
-Accepted transitions: (('q', None, ('$',)), ('q', 'Y'))
-(('q', 'y', None), ('q', 'y'))
-Input sequence: 'y$'
-Stack: ['_', 'x', '#', 'x', '#', 'S', 'z', '$']
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h*n'
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+']
 
 START level: 10
-Accepted transitions: (('q', None, ('Y',)), ('q', 'S'))
-(('q', 'y', None), ('q', 'y'))
-Input sequence: 'y$'
-Stack: ['_', 'x', '#', 'x', '#', 'S', 'z', 'Y']
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'h']
 
 START level: 11
-Accepted transitions: (('q', '$', None), ('q', '$'))
-Input sequence: '$'
-Stack: ['_', 'x', '#', 'x', '#', 'S', 'z', 'Y', 'y']
+Accepted transitions: (('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'H']
 
 START level: 12
-Accepted transitions: (('q', None, ('Y', 'y', '$')), ('q', 'Y'))
-(('q', None, ('$',)), ('q', 'Y'))
-Input sequence: ''
-Stack: ['_', 'x', '#', 'x', '#', 'S', 'z', 'Y', 'y', '$']
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'H', '*']
 
 START level: 13
-Accepted transitions: (('q', None, ('Y',)), ('q', 'S'))
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
 Input sequence: ''
-Stack: ['_', 'x', '#', 'x', '#', 'S', 'z', 'Y', 'y', 'Y']
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'H', '*', 'n']
 
 START level: 14
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'H', '*', 'F']
+
+START level: 15
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'H', '*', 'T']
+
+START level: 16
 Accepted transitions: 
 Input sequence: ''
-Stack: ['_', 'x', '#', 'x', '#', 'S', 'z', 'Y', 'y', 'S']
-
-START level: 13
-Accepted transitions: (('q', None, ('Y',)), ('q', 'S'))
-Input sequence: ''
-Stack: ['_', 'x', '#', 'x', '#', 'S', 'z', 'Y']
-
-START level: 14
-Accepted transitions: 
-Input sequence: ''
-Stack: ['_', 'x', '#', 'x', '#', 'S', 'z', 'S']
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'H', '*', 'E']
 
 START level: 11
-Accepted transitions: (('q', 'y', None), ('q', 'y'))
-Input sequence: 'y$'
-Stack: ['_', 'x', '#', 'x', '#', 'S', 'z', 'S']
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'h', '*']
 
 START level: 12
-Accepted transitions: (('q', '$', None), ('q', '$'))
-Input sequence: '$'
-Stack: ['_', 'x', '#', 'x', '#', 'S', 'z', 'S', 'y']
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'h', '*', 'n']
 
 START level: 13
-Accepted transitions: (('q', None, ('$',)), ('q', 'Y'))
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
 Input sequence: ''
-Stack: ['_', 'x', '#', 'x', '#', 'S', 'z', 'S', 'y', '$']
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'h', '*', 'F']
 
 START level: 14
-Accepted transitions: (('q', None, ('Y',)), ('q', 'S'))
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
 Input sequence: ''
-Stack: ['_', 'x', '#', 'x', '#', 'S', 'z', 'S', 'y', 'Y']
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'h', '*', 'T']
 
 START level: 15
 Accepted transitions: 
 Input sequence: ''
-Stack: ['_', 'x', '#', 'x', '#', 'S', 'z', 'S', 'y', 'S']
-
-START level: 10
-Accepted transitions: (('q', '$', None), ('q', '$'))
-Input sequence: '$'
-Stack: ['_', 'x', '#', 'x', '#', 'S', 'z', '$', 'y']
-
-START level: 11
-Accepted transitions: (('q', None, ('$',)), ('q', 'Y'))
-Input sequence: ''
-Stack: ['_', 'x', '#', 'x', '#', 'S', 'z', '$', 'y', '$']
-
-START level: 12
-Accepted transitions: (('q', None, ('Y',)), ('q', 'S'))
-Input sequence: ''
-Stack: ['_', 'x', '#', 'x', '#', 'S', 'z', '$', 'y', 'Y']
-
-START level: 13
-Accepted transitions: 
-Input sequence: ''
-Stack: ['_', 'x', '#', 'x', '#', 'S', 'z', '$', 'y', 'S']
-
-START level: 7
-Accepted transitions: (('q', '$', None), ('q', '$'))
-Input sequence: '$y$'
-Stack: ['_', 'x', '#', 'x', '#', 'Y', 'z']
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'h', '*', 'E']
 
 START level: 8
-Accepted transitions: (('q', None, ('Y', 'z', '$')), ('q', 'Y'))
-(('q', None, ('$',)), ('q', 'Y'))
-(('q', 'y', None), ('q', 'y'))
-Input sequence: 'y$'
-Stack: ['_', 'x', '#', 'x', '#', 'Y', 'z', '$']
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h*n'
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+']
 
 START level: 9
-Accepted transitions: (('q', None, ('Y',)), ('q', 'S'))
-(('q', 'y', None), ('q', 'y'))
-Input sequence: 'y$'
-Stack: ['_', 'x', '#', 'x', '#', 'Y', 'z', 'Y']
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'h']
 
 START level: 10
-Accepted transitions: (('q', '$', None), ('q', '$'))
-Input sequence: '$'
-Stack: ['_', 'x', '#', 'x', '#', 'Y', 'z', 'Y', 'y']
+Accepted transitions: (('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'H']
 
 START level: 11
-Accepted transitions: (('q', None, ('Y', 'y', '$')), ('q', 'Y'))
-(('q', None, ('$',)), ('q', 'Y'))
-Input sequence: ''
-Stack: ['_', 'x', '#', 'x', '#', 'Y', 'z', 'Y', 'y', '$']
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'H', '*']
 
 START level: 12
-Accepted transitions: (('q', None, ('Y',)), ('q', 'S'))
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
 Input sequence: ''
-Stack: ['_', 'x', '#', 'x', '#', 'Y', 'z', 'Y', 'y', 'Y']
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'H', '*', 'n']
 
 START level: 13
-Accepted transitions: 
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
 Input sequence: ''
-Stack: ['_', 'x', '#', 'x', '#', 'Y', 'z', 'Y', 'y', 'S']
-
-START level: 12
-Accepted transitions: (('q', None, ('Y',)), ('q', 'S'))
-Input sequence: ''
-Stack: ['_', 'x', '#', 'x', '#', 'Y', 'z', 'Y']
-
-START level: 13
-Accepted transitions: 
-Input sequence: ''
-Stack: ['_', 'x', '#', 'x', '#', 'Y', 'z', 'S']
-
-START level: 10
-Accepted transitions: (('q', 'y', None), ('q', 'y'))
-Input sequence: 'y$'
-Stack: ['_', 'x', '#', 'x', '#', 'Y', 'z', 'S']
-
-START level: 11
-Accepted transitions: (('q', '$', None), ('q', '$'))
-Input sequence: '$'
-Stack: ['_', 'x', '#', 'x', '#', 'Y', 'z', 'S', 'y']
-
-START level: 12
-Accepted transitions: (('q', None, ('$',)), ('q', 'Y'))
-Input sequence: ''
-Stack: ['_', 'x', '#', 'x', '#', 'Y', 'z', 'S', 'y', '$']
-
-START level: 13
-Accepted transitions: (('q', None, ('Y',)), ('q', 'S'))
-Input sequence: ''
-Stack: ['_', 'x', '#', 'x', '#', 'Y', 'z', 'S', 'y', 'Y']
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'H', '*', 'F']
 
 START level: 14
-Accepted transitions: 
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
 Input sequence: ''
-Stack: ['_', 'x', '#', 'x', '#', 'Y', 'z', 'S', 'y', 'S']
-
-START level: 9
-Accepted transitions: (('q', None, ('x', '#', 'Y')), ('q', 'X'))
-(('q', None, ('Y',)), ('q', 'S'))
-(('q', 'y', None), ('q', 'y'))
-Input sequence: 'y$'
-Stack: ['_', 'x', '#', 'x', '#', 'Y']
-
-START level: 10
-Accepted transitions: (('q', '$', None), ('q', '$'))
-Input sequence: '$'
-Stack: ['_', 'x', '#', 'x', '#', 'Y', 'y']
-
-START level: 11
-Accepted transitions: (('q', None, ('Y', 'y', '$')), ('q', 'Y'))
-(('q', None, ('$',)), ('q', 'Y'))
-Input sequence: ''
-Stack: ['_', 'x', '#', 'x', '#', 'Y', 'y', '$']
-
-START level: 12
-Accepted transitions: (('q', None, ('Y',)), ('q', 'S'))
-Input sequence: ''
-Stack: ['_', 'x', '#', 'x', '#', 'Y', 'y', 'Y']
-
-START level: 13
-Accepted transitions: 
-Input sequence: ''
-Stack: ['_', 'x', '#', 'x', '#', 'Y', 'y', 'S']
-
-START level: 12
-Accepted transitions: (('q', None, ('x', '#', 'Y')), ('q', 'X'))
-(('q', None, ('Y',)), ('q', 'S'))
-Input sequence: ''
-Stack: ['_', 'x', '#', 'x', '#', 'Y']
-
-START level: 13
-Accepted transitions: 
-Input sequence: ''
-Stack: ['_', 'x', '#', 'x', '#', 'S']
-
-START level: 13
-Accepted transitions: (('q', None, ('x', '#', 'X')), ('q', 'X'))
-(('q', None, ('X',)), ('q', 'S'))
-Input sequence: ''
-Stack: ['_', 'x', '#', 'X']
-
-START level: 14
-Accepted transitions: 
-Input sequence: ''
-Stack: ['_', 'x', '#', 'S']
-
-START level: 14
-Accepted transitions: (('q', None, ('X',)), ('q', 'S'))
-Input sequence: ''
-Stack: ['_', 'X']
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'H', '*', 'T']
 
 START level: 15
-Accepted transitions: (('q', None, ('_', 'S')), ('r', None))
+Accepted transitions: 
 Input sequence: ''
-Stack: ['_', 'S']
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'H', '*', 'E']
+
+START level: 10
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'h', '*']
+
+START level: 11
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'h', '*', 'n']
+
+START level: 12
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'h', '*', 'F']
+
+START level: 13
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'h', '*', 'T']
+
+START level: 14
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'h', '*', 'E']
+
+START level: 5
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h+h*n'
+Stack: ['_', 'H', '+', 'h', '+']
+
+START level: 6
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+h*n'
+Stack: ['_', 'H', '+', 'h', '+', 'h']
+
+START level: 7
+Accepted transitions: (('q', '+', None), ('q', '+'))
+Input sequence: '+h*n'
+Stack: ['_', 'H', '+', 'h', '+', 'H']
+
+START level: 8
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h*n'
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+']
+
+START level: 9
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'h']
+
+START level: 10
+Accepted transitions: (('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'H']
+
+START level: 11
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'H', '*']
+
+START level: 12
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'H', '*', 'n']
+
+START level: 13
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'H', '*', 'F']
+
+START level: 14
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'H', '*', 'T']
+
+START level: 15
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'H', '*', 'E']
+
+START level: 10
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'h', '*']
+
+START level: 11
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'h', '*', 'n']
+
+START level: 12
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'h', '*', 'F']
+
+START level: 13
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'h', '*', 'T']
+
+START level: 14
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'h', '*', 'E']
+
+START level: 7
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h*n'
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+']
+
+START level: 8
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'h']
+
+START level: 9
+Accepted transitions: (('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'H']
+
+START level: 10
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'H', '*']
+
+START level: 11
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'H', '*', 'n']
+
+START level: 12
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'H', '*', 'F']
+
+START level: 13
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'H', '*', 'T']
+
+START level: 14
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'H', '*', 'E']
+
+START level: 9
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'h', '*']
+
+START level: 10
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'h', '*', 'n']
+
+START level: 11
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'h', '*', 'F']
+
+START level: 12
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'h', '*', 'T']
+
+START level: 13
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'h', '*', 'E']
+
+START level: 2
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h+h+h*n'
+Stack: ['_', 'h', '+']
+
+START level: 3
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+h+h*n'
+Stack: ['_', 'h', '+', 'h']
+
+START level: 4
+Accepted transitions: (('q', '+', None), ('q', '+'))
+Input sequence: '+h+h*n'
+Stack: ['_', 'h', '+', 'H']
+
+START level: 5
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h+h*n'
+Stack: ['_', 'h', '+', 'H', '+']
+
+START level: 6
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+h*n'
+Stack: ['_', 'h', '+', 'H', '+', 'h']
+
+START level: 7
+Accepted transitions: (('q', '+', None), ('q', '+'))
+Input sequence: '+h*n'
+Stack: ['_', 'h', '+', 'H', '+', 'H']
+
+START level: 8
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h*n'
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+']
+
+START level: 9
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'h']
+
+START level: 10
+Accepted transitions: (('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'H']
+
+START level: 11
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'H', '*']
+
+START level: 12
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'H', '*', 'n']
+
+START level: 13
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'H', '*', 'F']
+
+START level: 14
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'H', '*', 'T']
+
+START level: 15
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'H', '*', 'E']
+
+START level: 10
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'h', '*']
+
+START level: 11
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'h', '*', 'n']
+
+START level: 12
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'h', '*', 'F']
+
+START level: 13
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'h', '*', 'T']
+
+START level: 14
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'h', '*', 'E']
+
+START level: 7
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h*n'
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+']
+
+START level: 8
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'h']
+
+START level: 9
+Accepted transitions: (('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'H']
+
+START level: 10
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'H', '*']
+
+START level: 11
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'H', '*', 'n']
+
+START level: 12
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'H', '*', 'F']
+
+START level: 13
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'H', '*', 'T']
+
+START level: 14
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'H', '*', 'E']
+
+START level: 9
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'h', '*']
+
+START level: 10
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'h', '*', 'n']
+
+START level: 11
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'h', '*', 'F']
+
+START level: 12
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'h', '*', 'T']
+
+START level: 13
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'h', '*', 'E']
+
+START level: 4
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h+h*n'
+Stack: ['_', 'h', '+', 'h', '+']
+
+START level: 5
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+h*n'
+Stack: ['_', 'h', '+', 'h', '+', 'h']
+
+START level: 6
+Accepted transitions: (('q', '+', None), ('q', '+'))
+Input sequence: '+h*n'
+Stack: ['_', 'h', '+', 'h', '+', 'H']
+
+START level: 7
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h*n'
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+']
+
+START level: 8
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'h']
+
+START level: 9
+Accepted transitions: (('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'H']
+
+START level: 10
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'H', '*']
+
+START level: 11
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'H', '*', 'n']
+
+START level: 12
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'H', '*', 'F']
+
+START level: 13
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'H', '*', 'T']
+
+START level: 14
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'H', '*', 'E']
+
+START level: 9
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'h', '*']
+
+START level: 10
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'h', '*', 'n']
+
+START level: 11
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'h', '*', 'F']
+
+START level: 12
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'h', '*', 'T']
+
+START level: 13
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'h', '*', 'E']
+
+START level: 6
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h*n'
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+']
+
+START level: 7
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'h']
+
+START level: 8
+Accepted transitions: (('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'H']
+
+START level: 9
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'H', '*']
+
+START level: 10
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'H', '*', 'n']
+
+START level: 11
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'H', '*', 'F']
+
+START level: 12
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'H', '*', 'T']
+
+START level: 13
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'H', '*', 'E']
+
+START level: 8
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'h', '*']
+
+START level: 9
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'h', '*', 'n']
+
+START level: 10
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'h', '*', 'F']
+
+START level: 11
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'h', '*', 'T']
+
+START level: 12
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'h', '*', 'E']
+
+START level: 0
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n*n'
+Stack: ['_']
+
+START level: 1
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'n']
+
+START level: 2
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'F']
+
+START level: 3
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'T']
+
+START level: 4
+Accepted transitions: (('q', None, ('_', 'E')), ('r', None))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'E']
+
+START level: 0
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h+h+h+h*n'
+Stack: ['_']
+
+START level: 1
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+h+h+h*n'
+Stack: ['_', 'h']
+
+START level: 2
+Accepted transitions: (('q', '+', None), ('q', '+'))
+Input sequence: '+h+h+h*n'
+Stack: ['_', 'H']
+
+START level: 3
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h+h+h*n'
+Stack: ['_', 'H', '+']
+
+START level: 4
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+h+h*n'
+Stack: ['_', 'H', '+', 'h']
+
+START level: 5
+Accepted transitions: (('q', '+', None), ('q', '+'))
+Input sequence: '+h+h*n'
+Stack: ['_', 'H', '+', 'H']
+
+START level: 6
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h+h*n'
+Stack: ['_', 'H', '+', 'H', '+']
+
+START level: 7
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+h*n'
+Stack: ['_', 'H', '+', 'H', '+', 'h']
+
+START level: 8
+Accepted transitions: (('q', '+', None), ('q', '+'))
+Input sequence: '+h*n'
+Stack: ['_', 'H', '+', 'H', '+', 'H']
+
+START level: 9
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h*n'
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+']
+
+START level: 10
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'h']
+
+START level: 11
+Accepted transitions: (('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'H']
+
+START level: 12
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'H', '*']
+
+START level: 13
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'H', '*', 'n']
+
+START level: 14
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'H', '*', 'F']
+
+START level: 15
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'H', '*', 'T']
+
+START level: 16
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'H', '*', 'E']
+
+START level: 11
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'h', '*']
+
+START level: 12
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'h', '*', 'n']
+
+START level: 13
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'h', '*', 'F']
+
+START level: 14
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'h', '*', 'T']
+
+START level: 15
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'h', '*', 'E']
+
+START level: 8
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h*n'
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+']
+
+START level: 9
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'h']
+
+START level: 10
+Accepted transitions: (('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'H']
+
+START level: 11
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'H', '*']
+
+START level: 12
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'H', '*', 'n']
+
+START level: 13
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'H', '*', 'F']
+
+START level: 14
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'H', '*', 'T']
+
+START level: 15
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'H', '*', 'E']
+
+START level: 10
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'h', '*']
+
+START level: 11
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'h', '*', 'n']
+
+START level: 12
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'h', '*', 'F']
+
+START level: 13
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'h', '*', 'T']
+
+START level: 14
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'h', '*', 'E']
+
+START level: 5
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h+h*n'
+Stack: ['_', 'H', '+', 'h', '+']
+
+START level: 6
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+h*n'
+Stack: ['_', 'H', '+', 'h', '+', 'h']
+
+START level: 7
+Accepted transitions: (('q', '+', None), ('q', '+'))
+Input sequence: '+h*n'
+Stack: ['_', 'H', '+', 'h', '+', 'H']
+
+START level: 8
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h*n'
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+']
+
+START level: 9
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'h']
+
+START level: 10
+Accepted transitions: (('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'H']
+
+START level: 11
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'H', '*']
+
+START level: 12
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'H', '*', 'n']
+
+START level: 13
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'H', '*', 'F']
+
+START level: 14
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'H', '*', 'T']
+
+START level: 15
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'H', '*', 'E']
+
+START level: 10
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'h', '*']
+
+START level: 11
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'h', '*', 'n']
+
+START level: 12
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'h', '*', 'F']
+
+START level: 13
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'h', '*', 'T']
+
+START level: 14
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'h', '*', 'E']
+
+START level: 7
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h*n'
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+']
+
+START level: 8
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'h']
+
+START level: 9
+Accepted transitions: (('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'H']
+
+START level: 10
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'H', '*']
+
+START level: 11
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'H', '*', 'n']
+
+START level: 12
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'H', '*', 'F']
+
+START level: 13
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'H', '*', 'T']
+
+START level: 14
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'H', '*', 'E']
+
+START level: 9
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'h', '*']
+
+START level: 10
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'h', '*', 'n']
+
+START level: 11
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'h', '*', 'F']
+
+START level: 12
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'h', '*', 'T']
+
+START level: 13
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'h', '*', 'E']
+
+START level: 2
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h+h+h*n'
+Stack: ['_', 'h', '+']
+
+START level: 3
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+h+h*n'
+Stack: ['_', 'h', '+', 'h']
+
+START level: 4
+Accepted transitions: (('q', '+', None), ('q', '+'))
+Input sequence: '+h+h*n'
+Stack: ['_', 'h', '+', 'H']
+
+START level: 5
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h+h*n'
+Stack: ['_', 'h', '+', 'H', '+']
+
+START level: 6
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+h*n'
+Stack: ['_', 'h', '+', 'H', '+', 'h']
+
+START level: 7
+Accepted transitions: (('q', '+', None), ('q', '+'))
+Input sequence: '+h*n'
+Stack: ['_', 'h', '+', 'H', '+', 'H']
+
+START level: 8
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h*n'
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+']
+
+START level: 9
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'h']
+
+START level: 10
+Accepted transitions: (('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'H']
+
+START level: 11
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'H', '*']
+
+START level: 12
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'H', '*', 'n']
+
+START level: 13
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'H', '*', 'F']
+
+START level: 14
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'H', '*', 'T']
+
+START level: 15
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'H', '*', 'E']
+
+START level: 10
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'h', '*']
+
+START level: 11
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'h', '*', 'n']
+
+START level: 12
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'h', '*', 'F']
+
+START level: 13
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'h', '*', 'T']
+
+START level: 14
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'h', '*', 'E']
+
+START level: 7
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h*n'
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+']
+
+START level: 8
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'h']
+
+START level: 9
+Accepted transitions: (('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'H']
+
+START level: 10
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'H', '*']
+
+START level: 11
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'H', '*', 'n']
+
+START level: 12
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'H', '*', 'F']
+
+START level: 13
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'H', '*', 'T']
+
+START level: 14
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'H', '*', 'E']
+
+START level: 9
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'h', '*']
+
+START level: 10
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'h', '*', 'n']
+
+START level: 11
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'h', '*', 'F']
+
+START level: 12
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'h', '*', 'T']
+
+START level: 13
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'h', '*', 'E']
+
+START level: 4
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h+h*n'
+Stack: ['_', 'h', '+', 'h', '+']
+
+START level: 5
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+h*n'
+Stack: ['_', 'h', '+', 'h', '+', 'h']
+
+START level: 6
+Accepted transitions: (('q', '+', None), ('q', '+'))
+Input sequence: '+h*n'
+Stack: ['_', 'h', '+', 'h', '+', 'H']
+
+START level: 7
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h*n'
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+']
+
+START level: 8
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'h']
+
+START level: 9
+Accepted transitions: (('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'H']
+
+START level: 10
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'H', '*']
+
+START level: 11
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'H', '*', 'n']
+
+START level: 12
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'H', '*', 'F']
+
+START level: 13
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'H', '*', 'T']
+
+START level: 14
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'H', '*', 'E']
+
+START level: 9
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'h', '*']
+
+START level: 10
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'h', '*', 'n']
+
+START level: 11
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'h', '*', 'F']
+
+START level: 12
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'h', '*', 'T']
+
+START level: 13
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'h', '*', 'E']
+
+START level: 6
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h*n'
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+']
+
+START level: 7
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'h']
+
+START level: 8
+Accepted transitions: (('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'H']
+
+START level: 9
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'H', '*']
+
+START level: 10
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'H', '*', 'n']
+
+START level: 11
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'H', '*', 'F']
+
+START level: 12
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'H', '*', 'T']
+
+START level: 13
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'H', '*', 'E']
+
+START level: 8
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'h', '*']
+
+START level: 9
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'h', '*', 'n']
+
+START level: 10
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'h', '*', 'F']
+
+START level: 11
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'h', '*', 'T']
+
+START level: 12
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'h', '*', 'E']
+
+START level: 0
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n*n*n+n'
+Stack: ['_']
+
+START level: 1
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n*n+n'
+Stack: ['_', 'n']
+
+START level: 2
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n*n+n'
+Stack: ['_', 'n', '*']
+
+START level: 3
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n+n'
+Stack: ['_', 'n', '*', 'n']
+
+START level: 4
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n+n'
+Stack: ['_', 'n', '*', 'n', '*']
+
+START level: 5
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+n'
+Stack: ['_', 'n', '*', 'n', '*', 'n']
+
+START level: 6
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'n', '*', 'n', '*', 'n', '+']
+
+START level: 7
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'n', '*', 'n', '+', 'n']
+
+START level: 8
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'n', '*', 'n', '+', 'F']
+
+START level: 9
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'n', '*', 'n', '+', 'T']
+
+START level: 10
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'n', '*', 'n', '*', 'n', '+', 'E']
+
+START level: 6
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+n'
+Stack: ['_', 'n', '*', 'n', '*', 'F']
+
+START level: 7
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'n', '*', 'n', '*', 'F', '+']
+
+START level: 8
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'n', '*', 'F', '+', 'n']
+
+START level: 9
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'n', '*', 'F', '+', 'F']
+
+START level: 10
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'n', '*', 'F', '+', 'T']
+
+START level: 11
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'n', '*', 'n', '*', 'F', '+', 'E']
+
+START level: 7
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+n'
+Stack: ['_', 'n', '*', 'n', '*', 'T']
+
+START level: 8
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'n', '*', 'n', '*', 'T', '+']
+
+START level: 9
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'n', '*', 'T', '+', 'n']
+
+START level: 10
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'n', '*', 'T', '+', 'F']
+
+START level: 11
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'n', '*', 'T', '+', 'T']
+
+START level: 12
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'n', '*', 'n', '*', 'T', '+', 'E']
+
+START level: 8
+Accepted transitions: (('q', '+', None), ('q', '+'))
+Input sequence: '+n'
+Stack: ['_', 'n', '*', 'n', '*', 'E']
+
+START level: 9
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'n', '*', 'n', '*', 'E', '+']
+
+START level: 10
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'n', '*', 'E', '+', 'n']
+
+START level: 11
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'n', '*', 'E', '+', 'F']
+
+START level: 12
+Accepted transitions: (('q', None, ('E', '+', 'T')), ('q', 'E'))
+(('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'n', '*', 'E', '+', 'T']
+
+START level: 13
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'n', '*', 'n', '*', 'E']
+
+START level: 13
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'n', '*', 'n', '*', 'E', '+', 'E']
+
+START level: 4
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n+n'
+Stack: ['_', 'n', '*', 'F']
+
+START level: 5
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n+n'
+Stack: ['_', 'n', '*', 'F', '*']
+
+START level: 6
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+n'
+Stack: ['_', 'n', '*', 'F', '*', 'n']
+
+START level: 7
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'n', '*', 'F', '*', 'n', '+']
+
+START level: 8
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'F', '*', 'n', '+', 'n']
+
+START level: 9
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'F', '*', 'n', '+', 'F']
+
+START level: 10
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'F', '*', 'n', '+', 'T']
+
+START level: 11
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'n', '*', 'F', '*', 'n', '+', 'E']
+
+START level: 7
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+n'
+Stack: ['_', 'n', '*', 'F', '*', 'F']
+
+START level: 8
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'n', '*', 'F', '*', 'F', '+']
+
+START level: 9
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'F', '*', 'F', '+', 'n']
+
+START level: 10
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'F', '*', 'F', '+', 'F']
+
+START level: 11
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'F', '*', 'F', '+', 'T']
+
+START level: 12
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'n', '*', 'F', '*', 'F', '+', 'E']
+
+START level: 8
+Accepted transitions: (('q', None, ('F', '*', 'T')), ('q', 'T'))
+(('q', None, ('T',)), ('q', 'E'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+n'
+Stack: ['_', 'n', '*', 'F', '*', 'T']
+
+START level: 9
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+n'
+Stack: ['_', 'n', '*', 'T']
+
+START level: 10
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'n', '*', 'T', '+']
+
+START level: 11
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'T', '+', 'n']
+
+START level: 12
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'T', '+', 'F']
+
+START level: 13
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'T', '+', 'T']
+
+START level: 14
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'n', '*', 'T', '+', 'E']
+
+START level: 10
+Accepted transitions: (('q', '+', None), ('q', '+'))
+Input sequence: '+n'
+Stack: ['_', 'n', '*', 'E']
+
+START level: 11
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'n', '*', 'E', '+']
+
+START level: 12
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'E', '+', 'n']
+
+START level: 13
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'E', '+', 'F']
+
+START level: 14
+Accepted transitions: (('q', None, ('E', '+', 'T')), ('q', 'E'))
+(('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'E', '+', 'T']
+
+START level: 15
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'n', '*', 'E']
+
+START level: 15
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'n', '*', 'E', '+', 'E']
+
+START level: 9
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'n', '*', 'F', '*', 'T', '+']
+
+START level: 10
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'F', '*', 'T', '+', 'n']
+
+START level: 11
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'F', '*', 'T', '+', 'F']
+
+START level: 12
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'F', '*', 'T', '+', 'T']
+
+START level: 13
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'n', '*', 'F', '*', 'T', '+', 'E']
+
+START level: 9
+Accepted transitions: (('q', '+', None), ('q', '+'))
+Input sequence: '+n'
+Stack: ['_', 'n', '*', 'F', '*', 'E']
+
+START level: 10
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'n', '*', 'F', '*', 'E', '+']
+
+START level: 11
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'F', '*', 'E', '+', 'n']
+
+START level: 12
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'F', '*', 'E', '+', 'F']
+
+START level: 13
+Accepted transitions: (('q', None, ('E', '+', 'T')), ('q', 'E'))
+(('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'F', '*', 'E', '+', 'T']
+
+START level: 14
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'n', '*', 'F', '*', 'E']
+
+START level: 14
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'n', '*', 'F', '*', 'E', '+', 'E']
+
+START level: 5
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n+n'
+Stack: ['_', 'n', '*', 'T']
+
+START level: 6
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n+n'
+Stack: ['_', 'n', '*', 'T', '*']
+
+START level: 7
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+n'
+Stack: ['_', 'n', '*', 'T', '*', 'n']
+
+START level: 8
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'n', '*', 'T', '*', 'n', '+']
+
+START level: 9
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'T', '*', 'n', '+', 'n']
+
+START level: 10
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'T', '*', 'n', '+', 'F']
+
+START level: 11
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'T', '*', 'n', '+', 'T']
+
+START level: 12
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'n', '*', 'T', '*', 'n', '+', 'E']
+
+START level: 8
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+n'
+Stack: ['_', 'n', '*', 'T', '*', 'F']
+
+START level: 9
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'n', '*', 'T', '*', 'F', '+']
+
+START level: 10
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'T', '*', 'F', '+', 'n']
+
+START level: 11
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'T', '*', 'F', '+', 'F']
+
+START level: 12
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'T', '*', 'F', '+', 'T']
+
+START level: 13
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'n', '*', 'T', '*', 'F', '+', 'E']
+
+START level: 9
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+n'
+Stack: ['_', 'n', '*', 'T', '*', 'T']
+
+START level: 10
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'n', '*', 'T', '*', 'T', '+']
+
+START level: 11
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'T', '*', 'T', '+', 'n']
+
+START level: 12
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'T', '*', 'T', '+', 'F']
+
+START level: 13
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'T', '*', 'T', '+', 'T']
+
+START level: 14
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'n', '*', 'T', '*', 'T', '+', 'E']
+
+START level: 10
+Accepted transitions: (('q', '+', None), ('q', '+'))
+Input sequence: '+n'
+Stack: ['_', 'n', '*', 'T', '*', 'E']
+
+START level: 11
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'n', '*', 'T', '*', 'E', '+']
+
+START level: 12
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'T', '*', 'E', '+', 'n']
+
+START level: 13
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'T', '*', 'E', '+', 'F']
+
+START level: 14
+Accepted transitions: (('q', None, ('E', '+', 'T')), ('q', 'E'))
+(('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'T', '*', 'E', '+', 'T']
+
+START level: 15
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'n', '*', 'T', '*', 'E']
+
+START level: 15
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'n', '*', 'T', '*', 'E', '+', 'E']
+
+START level: 6
+Accepted transitions: (('q', '*', None), ('q', '*'))
+Input sequence: '*n+n'
+Stack: ['_', 'n', '*', 'E']
+
+START level: 7
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n+n'
+Stack: ['_', 'n', '*', 'E', '*']
+
+START level: 8
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+n'
+Stack: ['_', 'n', '*', 'E', '*', 'n']
+
+START level: 9
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'n', '*', 'E', '*', 'n', '+']
+
+START level: 10
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'E', '*', 'n', '+', 'n']
+
+START level: 11
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'E', '*', 'n', '+', 'F']
+
+START level: 12
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'E', '*', 'n', '+', 'T']
+
+START level: 13
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'n', '*', 'E', '*', 'n', '+', 'E']
+
+START level: 9
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+n'
+Stack: ['_', 'n', '*', 'E', '*', 'F']
+
+START level: 10
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'n', '*', 'E', '*', 'F', '+']
+
+START level: 11
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'E', '*', 'F', '+', 'n']
+
+START level: 12
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'E', '*', 'F', '+', 'F']
+
+START level: 13
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'E', '*', 'F', '+', 'T']
+
+START level: 14
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'n', '*', 'E', '*', 'F', '+', 'E']
+
+START level: 10
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+n'
+Stack: ['_', 'n', '*', 'E', '*', 'T']
+
+START level: 11
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'n', '*', 'E', '*', 'T', '+']
+
+START level: 12
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'E', '*', 'T', '+', 'n']
+
+START level: 13
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'E', '*', 'T', '+', 'F']
+
+START level: 14
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'E', '*', 'T', '+', 'T']
+
+START level: 15
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'n', '*', 'E', '*', 'T', '+', 'E']
+
+START level: 11
+Accepted transitions: (('q', '+', None), ('q', '+'))
+Input sequence: '+n'
+Stack: ['_', 'n', '*', 'E', '*', 'E']
+
+START level: 12
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'n', '*', 'E', '*', 'E', '+']
+
+START level: 13
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'E', '*', 'E', '+', 'n']
+
+START level: 14
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'E', '*', 'E', '+', 'F']
+
+START level: 15
+Accepted transitions: (('q', None, ('E', '+', 'T')), ('q', 'E'))
+(('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'E', '*', 'E', '+', 'T']
+
+START level: 16
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'n', '*', 'E', '*', 'E']
+
+START level: 16
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'n', '*', 'E', '*', 'E', '+', 'E']
+
+START level: 2
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n*n+n'
+Stack: ['_', 'F']
+
+START level: 3
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n*n+n'
+Stack: ['_', 'F', '*']
+
+START level: 4
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n+n'
+Stack: ['_', 'F', '*', 'n']
+
+START level: 5
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n+n'
+Stack: ['_', 'F', '*', 'n', '*']
+
+START level: 6
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+n'
+Stack: ['_', 'F', '*', 'n', '*', 'n']
+
+START level: 7
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'F', '*', 'n', '*', 'n', '+']
+
+START level: 8
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'F', '*', 'n', '*', 'n', '+', 'n']
+
+START level: 9
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'F', '*', 'n', '*', 'n', '+', 'F']
+
+START level: 10
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'F', '*', 'n', '*', 'n', '+', 'T']
+
+START level: 11
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'F', '*', 'n', '*', 'n', '+', 'E']
+
+START level: 7
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+n'
+Stack: ['_', 'F', '*', 'n', '*', 'F']
+
+START level: 8
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'F', '*', 'n', '*', 'F', '+']
+
+START level: 9
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'F', '*', 'n', '*', 'F', '+', 'n']
+
+START level: 10
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'F', '*', 'n', '*', 'F', '+', 'F']
+
+START level: 11
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'F', '*', 'n', '*', 'F', '+', 'T']
+
+START level: 12
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'F', '*', 'n', '*', 'F', '+', 'E']
+
+START level: 8
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+n'
+Stack: ['_', 'F', '*', 'n', '*', 'T']
+
+START level: 9
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'F', '*', 'n', '*', 'T', '+']
+
+START level: 10
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'F', '*', 'n', '*', 'T', '+', 'n']
+
+START level: 11
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'F', '*', 'n', '*', 'T', '+', 'F']
+
+START level: 12
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'F', '*', 'n', '*', 'T', '+', 'T']
+
+START level: 13
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'F', '*', 'n', '*', 'T', '+', 'E']
+
+START level: 9
+Accepted transitions: (('q', '+', None), ('q', '+'))
+Input sequence: '+n'
+Stack: ['_', 'F', '*', 'n', '*', 'E']
+
+START level: 10
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'F', '*', 'n', '*', 'E', '+']
+
+START level: 11
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'F', '*', 'n', '*', 'E', '+', 'n']
+
+START level: 12
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'F', '*', 'n', '*', 'E', '+', 'F']
+
+START level: 13
+Accepted transitions: (('q', None, ('E', '+', 'T')), ('q', 'E'))
+(('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'F', '*', 'n', '*', 'E', '+', 'T']
+
+START level: 14
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'F', '*', 'n', '*', 'E']
+
+START level: 14
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'F', '*', 'n', '*', 'E', '+', 'E']
+
+START level: 5
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n+n'
+Stack: ['_', 'F', '*', 'F']
+
+START level: 6
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n+n'
+Stack: ['_', 'F', '*', 'F', '*']
+
+START level: 7
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+n'
+Stack: ['_', 'F', '*', 'F', '*', 'n']
+
+START level: 8
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'F', '*', 'F', '*', 'n', '+']
+
+START level: 9
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'F', '*', 'F', '*', 'n', '+', 'n']
+
+START level: 10
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'F', '*', 'F', '*', 'n', '+', 'F']
+
+START level: 11
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'F', '*', 'F', '*', 'n', '+', 'T']
+
+START level: 12
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'F', '*', 'F', '*', 'n', '+', 'E']
+
+START level: 8
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+n'
+Stack: ['_', 'F', '*', 'F', '*', 'F']
+
+START level: 9
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'F', '*', 'F', '*', 'F', '+']
+
+START level: 10
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'F', '*', 'F', '*', 'F', '+', 'n']
+
+START level: 11
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'F', '*', 'F', '*', 'F', '+', 'F']
+
+START level: 12
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'F', '*', 'F', '*', 'F', '+', 'T']
+
+START level: 13
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'F', '*', 'F', '*', 'F', '+', 'E']
+
+START level: 9
+Accepted transitions: (('q', None, ('F', '*', 'T')), ('q', 'T'))
+(('q', None, ('T',)), ('q', 'E'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+n'
+Stack: ['_', 'F', '*', 'F', '*', 'T']
+
+START level: 10
+Accepted transitions: (('q', None, ('F', '*', 'T')), ('q', 'T'))
+(('q', None, ('T',)), ('q', 'E'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+n'
+Stack: ['_', 'F', '*', 'T']
+
+START level: 11
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+n'
+Stack: ['_', 'T']
+
+START level: 12
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'T', '+']
+
+START level: 13
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'T', '+', 'n']
+
+START level: 14
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'T', '+', 'F']
+
+START level: 15
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'T', '+', 'T']
+
+START level: 16
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'T', '+', 'E']
+
+START level: 12
+Accepted transitions: (('q', None, ('_', 'E')), ('r', None))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+n'
+Stack: ['_', 'E']
+
+START level: 0
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n*n'
+Stack: ['_']
+
+START level: 1
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'n']
+
+START level: 2
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'n', '*']
+
+START level: 3
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'n']
+
+START level: 4
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'F']
+
+START level: 5
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'n', '*', 'T']
+
+START level: 6
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'n', '*', 'E']
+
+START level: 2
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'F']
+
+START level: 3
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'F', '*']
+
+START level: 4
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'F', '*', 'n']
+
+START level: 5
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'F', '*', 'F']
+
+START level: 6
+Accepted transitions: (('q', None, ('F', '*', 'T')), ('q', 'T'))
+(('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'F', '*', 'T']
+
+START level: 7
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'T']
+
+START level: 8
+Accepted transitions: (('q', None, ('_', 'E')), ('r', None))
+Input sequence: ''
+Stack: ['_', 'E']
+
+START level: 0
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h+h+h+h*n'
+Stack: ['_']
+
+START level: 1
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+h+h+h*n'
+Stack: ['_', 'h']
+
+START level: 2
+Accepted transitions: (('q', '+', None), ('q', '+'))
+Input sequence: '+h+h+h*n'
+Stack: ['_', 'H']
+
+START level: 3
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h+h+h*n'
+Stack: ['_', 'H', '+']
+
+START level: 4
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+h+h*n'
+Stack: ['_', 'H', '+', 'h']
+
+START level: 5
+Accepted transitions: (('q', '+', None), ('q', '+'))
+Input sequence: '+h+h*n'
+Stack: ['_', 'H', '+', 'H']
+
+START level: 6
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h+h*n'
+Stack: ['_', 'H', '+', 'H', '+']
+
+START level: 7
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+h*n'
+Stack: ['_', 'H', '+', 'H', '+', 'h']
+
+START level: 8
+Accepted transitions: (('q', '+', None), ('q', '+'))
+Input sequence: '+h*n'
+Stack: ['_', 'H', '+', 'H', '+', 'H']
+
+START level: 9
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h*n'
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+']
+
+START level: 10
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'h']
+
+START level: 11
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'h', '*']
+
+START level: 12
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'h', '*', 'n']
+
+START level: 13
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'h', '*', 'F']
+
+START level: 14
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'h', '*', 'T']
+
+START level: 15
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'h', '*', 'E']
+
+START level: 11
+Accepted transitions: (('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'H']
+
+START level: 12
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'H', '*']
+
+START level: 13
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'H', '*', 'n']
+
+START level: 14
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'H', '*', 'F']
+
+START level: 15
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'H', '*', 'T']
+
+START level: 16
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'H', '+', 'H', '*', 'E']
+
+START level: 8
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h*n'
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+']
+
+START level: 9
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'h']
+
+START level: 10
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'h', '*']
+
+START level: 11
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'h', '*', 'n']
+
+START level: 12
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'h', '*', 'F']
+
+START level: 13
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'h', '*', 'T']
+
+START level: 14
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'h', '*', 'E']
+
+START level: 10
+Accepted transitions: (('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'H']
+
+START level: 11
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'H', '*']
+
+START level: 12
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'H', '*', 'n']
+
+START level: 13
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'H', '*', 'F']
+
+START level: 14
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'H', '*', 'T']
+
+START level: 15
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'H', '+', 'H', '+', 'h', '+', 'H', '*', 'E']
+
+START level: 5
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h+h*n'
+Stack: ['_', 'H', '+', 'h', '+']
+
+START level: 6
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+h*n'
+Stack: ['_', 'H', '+', 'h', '+', 'h']
+
+START level: 7
+Accepted transitions: (('q', '+', None), ('q', '+'))
+Input sequence: '+h*n'
+Stack: ['_', 'H', '+', 'h', '+', 'H']
+
+START level: 8
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h*n'
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+']
+
+START level: 9
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'h']
+
+START level: 10
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'h', '*']
+
+START level: 11
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'h', '*', 'n']
+
+START level: 12
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'h', '*', 'F']
+
+START level: 13
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'h', '*', 'T']
+
+START level: 14
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'h', '*', 'E']
+
+START level: 10
+Accepted transitions: (('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'H']
+
+START level: 11
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'H', '*']
+
+START level: 12
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'H', '*', 'n']
+
+START level: 13
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'H', '*', 'F']
+
+START level: 14
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'H', '*', 'T']
+
+START level: 15
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'H', '+', 'H', '*', 'E']
+
+START level: 7
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h*n'
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+']
+
+START level: 8
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'h']
+
+START level: 9
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'h', '*']
+
+START level: 10
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'h', '*', 'n']
+
+START level: 11
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'h', '*', 'F']
+
+START level: 12
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'h', '*', 'T']
+
+START level: 13
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'h', '*', 'E']
+
+START level: 9
+Accepted transitions: (('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'H']
+
+START level: 10
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'H', '*']
+
+START level: 11
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'H', '*', 'n']
+
+START level: 12
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'H', '*', 'F']
+
+START level: 13
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'H', '*', 'T']
+
+START level: 14
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'H', '+', 'h', '+', 'h', '+', 'H', '*', 'E']
+
+START level: 2
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h+h+h*n'
+Stack: ['_', 'h', '+']
+
+START level: 3
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+h+h*n'
+Stack: ['_', 'h', '+', 'h']
+
+START level: 4
+Accepted transitions: (('q', '+', None), ('q', '+'))
+Input sequence: '+h+h*n'
+Stack: ['_', 'h', '+', 'H']
+
+START level: 5
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h+h*n'
+Stack: ['_', 'h', '+', 'H', '+']
+
+START level: 6
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+h*n'
+Stack: ['_', 'h', '+', 'H', '+', 'h']
+
+START level: 7
+Accepted transitions: (('q', '+', None), ('q', '+'))
+Input sequence: '+h*n'
+Stack: ['_', 'h', '+', 'H', '+', 'H']
+
+START level: 8
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h*n'
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+']
+
+START level: 9
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'h']
+
+START level: 10
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'h', '*']
+
+START level: 11
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'h', '*', 'n']
+
+START level: 12
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'h', '*', 'F']
+
+START level: 13
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'h', '*', 'T']
+
+START level: 14
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'h', '*', 'E']
+
+START level: 10
+Accepted transitions: (('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'H']
+
+START level: 11
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'H', '*']
+
+START level: 12
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'H', '*', 'n']
+
+START level: 13
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'H', '*', 'F']
+
+START level: 14
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'H', '*', 'T']
+
+START level: 15
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'H', '+', 'H', '*', 'E']
+
+START level: 7
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h*n'
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+']
+
+START level: 8
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'h']
+
+START level: 9
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'h', '*']
+
+START level: 10
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'h', '*', 'n']
+
+START level: 11
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'h', '*', 'F']
+
+START level: 12
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'h', '*', 'T']
+
+START level: 13
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'h', '*', 'E']
+
+START level: 9
+Accepted transitions: (('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'H']
+
+START level: 10
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'H', '*']
+
+START level: 11
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'H', '*', 'n']
+
+START level: 12
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'H', '*', 'F']
+
+START level: 13
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'H', '*', 'T']
+
+START level: 14
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'h', '+', 'H', '+', 'h', '+', 'H', '*', 'E']
+
+START level: 4
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h+h*n'
+Stack: ['_', 'h', '+', 'h', '+']
+
+START level: 5
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '+', None), ('q', '+'))
+Input sequence: '+h*n'
+Stack: ['_', 'h', '+', 'h', '+', 'h']
+
+START level: 6
+Accepted transitions: (('q', '+', None), ('q', '+'))
+Input sequence: '+h*n'
+Stack: ['_', 'h', '+', 'h', '+', 'H']
+
+START level: 7
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h*n'
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+']
+
+START level: 8
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'h']
+
+START level: 9
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'h', '*']
+
+START level: 10
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'h', '*', 'n']
+
+START level: 11
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'h', '*', 'F']
+
+START level: 12
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'h', '*', 'T']
+
+START level: 13
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'h', '*', 'E']
+
+START level: 9
+Accepted transitions: (('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'H']
+
+START level: 10
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'H', '*']
+
+START level: 11
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'H', '*', 'n']
+
+START level: 12
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'H', '*', 'F']
+
+START level: 13
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'H', '*', 'T']
+
+START level: 14
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'H', '+', 'H', '*', 'E']
+
+START level: 6
+Accepted transitions: (('q', 'h', None), ('q', 'h'))
+Input sequence: 'h*n'
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+']
+
+START level: 7
+Accepted transitions: (('q', None, ('h',)), ('q', 'H'))
+(('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'h']
+
+START level: 8
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'h', '*']
+
+START level: 9
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'h', '*', 'n']
+
+START level: 10
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'h', '*', 'F']
+
+START level: 11
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'h', '*', 'T']
+
+START level: 12
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'h', '*', 'E']
+
+START level: 8
+Accepted transitions: (('q', '*', None), ('q', '*'))
+Input sequence: '*n'
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'H']
+
+START level: 9
+Accepted transitions: (('q', 'n', None), ('q', 'n'))
+Input sequence: 'n'
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'H', '*']
+
+START level: 10
+Accepted transitions: (('q', None, ('n',)), ('q', 'F'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'H', '*', 'n']
+
+START level: 11
+Accepted transitions: (('q', None, ('F',)), ('q', 'T'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'H', '*', 'F']
+
+START level: 12
+Accepted transitions: (('q', None, ('T',)), ('q', 'E'))
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'H', '*', 'T']
+
+START level: 13
+Accepted transitions: 
+Input sequence: ''
+Stack: ['_', 'h', '+', 'h', '+', 'h', '+', 'H', '*', 'E']
 

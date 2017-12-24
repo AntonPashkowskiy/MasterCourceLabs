@@ -35,26 +35,26 @@ def main():
                 pd_automaton = PushdownAutomaton.from_grammar(grammar)
                 pd_automaton.set_logger(logger)
 
-                pd_automaton.set_input_sequence('$y$')
+                pd_automaton.set_input_sequence("n*n*n+n")
                 print(pd_automaton.start())
-                pd_automaton.set_input_sequence('xxxxx$y$')
+                pd_automaton.set_input_sequence("n*n")
                 print(pd_automaton.start())
-                pd_automaton.set_input_sequence('x#x#$z$y$')
+                pd_automaton.set_input_sequence("h+h+h+h*n")
                 print(pd_automaton.start())
 
             with FileLogger("pushdown_automaton_ext_trace.txt") as logger:
                 epd_automaton = ExtendedPushdownAutomaton.from_grammar(grammar)
                 epd_automaton.set_logger(logger)
 
-                epd_automaton.set_input_sequence('$y$')
+                epd_automaton.set_input_sequence("n*n*n+n")
                 print(epd_automaton.start())
-                epd_automaton.set_input_sequence('xxxxx$y$')
+                epd_automaton.set_input_sequence("n*n")
                 print(epd_automaton.start())
-                epd_automaton.set_input_sequence('x#x#$z$y$')
+                epd_automaton.set_input_sequence("h+h+h+h*n")
                 print(epd_automaton.start())
         except ValueError as error:
             print(error)
 
- 
+
 if __name__ == "__main__":
     main()

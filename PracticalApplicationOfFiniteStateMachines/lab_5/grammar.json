@@ -1,12 +1,12 @@
 {
-    "terminals": "xyzk#$ε",
-    "nonterminals": "SXYZK",
+    "terminals": "+-*/nmhε",
+    "nonterminals": "ETFGH",
     "rules": [
-        "S->X|Y|Z",
-        "X->x#X|x#Y|ε",
-        "Y->Yy$|Yz$|$|ε",
-        "Z->Zz$",
-        "K->Kk$|k$"
+        "E->T|E+T|E-T|ε",
+        "T->F|F*T|F/T|ε",
+        "F->G|Fn|n",
+        "G->Gm",
+        "H->Hh|h"
     ],
-    "start_symbol": "S"
+    "start_symbol": "E"
 }
