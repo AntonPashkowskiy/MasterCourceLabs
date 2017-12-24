@@ -1,0 +1,12 @@
+{
+    "terminals": "xyzk#$ε",
+    "nonterminals": "SXYZK",
+    "rules": [
+        "S->X|Y|Z",
+        "X->x#X|x#Y|ε",
+        "Y->Yy$|Yz$|$|ε",
+        "Z->Zz$",
+        "K->Kk$|k$"
+    ],
+    "start_symbol": "S"
+}
