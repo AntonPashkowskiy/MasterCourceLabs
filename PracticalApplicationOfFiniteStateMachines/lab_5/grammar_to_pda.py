@@ -42,7 +42,7 @@ def main():
                 pd_automaton.set_input_sequence('x#x#$z$y$')
                 print(pd_automaton.start())
 
-            with FileLogger("ext_pushdown_automaton_trace.txt") as logger:
+            with FileLogger("pushdown_automaton_ext_trace.txt") as logger:
                 epd_automaton = ExtendedPushdownAutomaton.from_grammar(grammar)
                 epd_automaton.set_logger(logger)
 

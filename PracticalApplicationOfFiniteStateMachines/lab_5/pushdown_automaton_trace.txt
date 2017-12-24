@@ -653,3 +653,1103 @@ Input sequence: '$'
 Stack: ['$']
 Transitions: [(('q', '$', '$'), ('q', None))]
 
+FILTER level: 0
+Input sequence: '$y$'
+Stack: ['S']
+Transitions: [(('q', None, 'S'), ('q', ('Y',))), (('q', None, 'S'), ('q', ('X',))), (('q', None, 'S'), ('q', ('Z',)))]
+
+FILTER level: 1
+Input sequence: '$y$'
+Stack: ['Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 2
+Input sequence: '$y$'
+Stack: ['µ', 'Î']
+Transitions: []
+
+FILTER level: 2
+Input sequence: '$y$'
+Stack: ['$']
+Transitions: [(('q', '$', '$'), ('q', None))]
+
+FILTER level: 3
+Input sequence: 'y$'
+Stack: []
+Transitions: []
+
+FILTER level: 2
+Input sequence: '$y$'
+Stack: ['$', 'z', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 3
+Input sequence: '$y$'
+Stack: ['$', 'z', '$']
+Transitions: [(('q', '$', '$'), ('q', None))]
+
+FILTER level: 4
+Input sequence: 'y$'
+Stack: ['$', 'z']
+Transitions: []
+
+FILTER level: 2
+Input sequence: '$y$'
+Stack: ['$', 'y', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 3
+Input sequence: '$y$'
+Stack: ['$', 'y', '$']
+Transitions: [(('q', '$', '$'), ('q', None))]
+
+FILTER level: 4
+Input sequence: 'y$'
+Stack: ['$', 'y']
+Transitions: [(('q', 'y', 'y'), ('q', None))]
+
+FILTER level: 5
+Input sequence: '$'
+Stack: ['$']
+Transitions: [(('q', '$', '$'), ('q', None))]
+
+FILTER level: 0
+Input sequence: 'xxxxx$y$'
+Stack: ['S']
+Transitions: [(('q', None, 'S'), ('q', ('Y',))), (('q', None, 'S'), ('q', ('X',))), (('q', None, 'S'), ('q', ('Z',)))]
+
+FILTER level: 1
+Input sequence: 'xxxxx$y$'
+Stack: ['Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 2
+Input sequence: 'xxxxx$y$'
+Stack: ['µ', 'Î']
+Transitions: []
+
+FILTER level: 2
+Input sequence: 'xxxxx$y$'
+Stack: ['$']
+Transitions: []
+
+FILTER level: 2
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'z', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 3
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'z', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 3
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'z', '$']
+Transitions: []
+
+FILTER level: 3
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'z', '$', 'z', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 4
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'z', '$', 'z', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 4
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'z', '$', 'z', '$']
+Transitions: []
+
+FILTER level: 4
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'z', '$', 'z', '$', 'z', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 5
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'z', '$', 'z', '$', 'z', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'z', '$', 'z', '$', 'z', '$']
+Transitions: []
+
+FILTER level: 4
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'z', '$', 'z', '$', 'y', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 5
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'z', '$', 'z', '$', 'y', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'z', '$', 'z', '$', 'y', '$']
+Transitions: []
+
+FILTER level: 3
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'z', '$', 'y', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 4
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'z', '$', 'y', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 4
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'z', '$', 'y', '$']
+Transitions: []
+
+FILTER level: 4
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'z', '$', 'y', '$', 'z', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 5
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'z', '$', 'y', '$', 'z', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'z', '$', 'y', '$', 'z', '$']
+Transitions: []
+
+FILTER level: 4
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'z', '$', 'y', '$', 'y', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 5
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'z', '$', 'y', '$', 'y', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'z', '$', 'y', '$', 'y', '$']
+Transitions: []
+
+FILTER level: 2
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'y', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 3
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'y', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 3
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'y', '$']
+Transitions: []
+
+FILTER level: 3
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'y', '$', 'z', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 4
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'y', '$', 'z', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 4
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'y', '$', 'z', '$']
+Transitions: []
+
+FILTER level: 4
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'y', '$', 'z', '$', 'z', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 5
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'y', '$', 'z', '$', 'z', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'y', '$', 'z', '$', 'z', '$']
+Transitions: []
+
+FILTER level: 4
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'y', '$', 'z', '$', 'y', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 5
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'y', '$', 'z', '$', 'y', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'y', '$', 'z', '$', 'y', '$']
+Transitions: []
+
+FILTER level: 3
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'y', '$', 'y', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 4
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'y', '$', 'y', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 4
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'y', '$', 'y', '$']
+Transitions: []
+
+FILTER level: 4
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'y', '$', 'y', '$', 'z', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 5
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'y', '$', 'y', '$', 'z', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'y', '$', 'y', '$', 'z', '$']
+Transitions: []
+
+FILTER level: 4
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'y', '$', 'y', '$', 'y', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 5
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'y', '$', 'y', '$', 'y', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'y', '$', 'y', '$', 'y', '$']
+Transitions: []
+
+FILTER level: 1
+Input sequence: 'xxxxx$y$'
+Stack: ['X']
+Transitions: [(('q', None, 'X'), ('q', ('Y', '#', 'x'))), (('q', None, 'X'), ('q', ('µ', 'Î'))), (('q', None, 'X'), ('q', ('X', '#', 'x')))]
+
+FILTER level: 2
+Input sequence: 'xxxxx$y$'
+Stack: ['Y', '#', 'x']
+Transitions: [(('q', 'x', 'x'), ('q', None))]
+
+FILTER level: 3
+Input sequence: 'xxxx$y$'
+Stack: ['Y', '#']
+Transitions: []
+
+FILTER level: 2
+Input sequence: 'xxxxx$y$'
+Stack: ['µ', 'Î']
+Transitions: []
+
+FILTER level: 2
+Input sequence: 'xxxxx$y$'
+Stack: ['X', '#', 'x']
+Transitions: [(('q', 'x', 'x'), ('q', None))]
+
+FILTER level: 3
+Input sequence: 'xxxx$y$'
+Stack: ['X', '#']
+Transitions: []
+
+FILTER level: 1
+Input sequence: 'xxxxx$y$'
+Stack: ['Z']
+Transitions: [(('q', None, 'Z'), ('q', ('$', 'z', 'Z')))]
+
+FILTER level: 2
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'z', 'Z']
+Transitions: [(('q', None, 'Z'), ('q', ('$', 'z', 'Z')))]
+
+FILTER level: 3
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'z', '$', 'z', 'Z']
+Transitions: [(('q', None, 'Z'), ('q', ('$', 'z', 'Z')))]
+
+FILTER level: 4
+Input sequence: 'xxxxx$y$'
+Stack: ['$', 'z', '$', 'z', '$', 'z', 'Z']
+Transitions: [(('q', None, 'Z'), ('q', ('$', 'z', 'Z')))]
+
+FILTER level: 0
+Input sequence: 'x#x#$z$y$'
+Stack: ['S']
+Transitions: [(('q', None, 'S'), ('q', ('Y',))), (('q', None, 'S'), ('q', ('X',))), (('q', None, 'S'), ('q', ('Z',)))]
+
+FILTER level: 1
+Input sequence: 'x#x#$z$y$'
+Stack: ['Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 2
+Input sequence: 'x#x#$z$y$'
+Stack: ['µ', 'Î']
+Transitions: []
+
+FILTER level: 2
+Input sequence: 'x#x#$z$y$'
+Stack: ['$']
+Transitions: []
+
+FILTER level: 2
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 3
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 3
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$']
+Transitions: []
+
+FILTER level: 3
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$', 'z', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 4
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$', 'z', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 4
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$', 'z', '$']
+Transitions: []
+
+FILTER level: 4
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$', 'z', '$', 'z', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 5
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$', 'z', '$', 'z', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$', 'z', '$', 'z', '$']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$', 'z', '$', 'z', '$', 'z', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 6
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$', 'z', '$', 'z', '$', 'z', '$']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$', 'z', '$', 'z', '$', 'y', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 6
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$', 'z', '$', 'z', '$', 'y', '$']
+Transitions: []
+
+FILTER level: 4
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$', 'z', '$', 'y', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 5
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$', 'z', '$', 'y', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$', 'z', '$', 'y', '$']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$', 'z', '$', 'y', '$', 'z', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 6
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$', 'z', '$', 'y', '$', 'z', '$']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$', 'z', '$', 'y', '$', 'y', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 6
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$', 'z', '$', 'y', '$', 'y', '$']
+Transitions: []
+
+FILTER level: 3
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$', 'y', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 4
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$', 'y', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 4
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$', 'y', '$']
+Transitions: []
+
+FILTER level: 4
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$', 'y', '$', 'z', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 5
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$', 'y', '$', 'z', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$', 'y', '$', 'z', '$']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$', 'y', '$', 'z', '$', 'z', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 6
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$', 'y', '$', 'z', '$', 'z', '$']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$', 'y', '$', 'z', '$', 'y', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 6
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$', 'y', '$', 'z', '$', 'y', '$']
+Transitions: []
+
+FILTER level: 4
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$', 'y', '$', 'y', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 5
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$', 'y', '$', 'y', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$', 'y', '$', 'y', '$']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$', 'y', '$', 'y', '$', 'z', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 6
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$', 'y', '$', 'y', '$', 'z', '$']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$', 'y', '$', 'y', '$', 'y', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 6
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'z', '$', 'y', '$', 'y', '$', 'y', '$']
+Transitions: []
+
+FILTER level: 2
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 3
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 3
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$']
+Transitions: []
+
+FILTER level: 3
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$', 'z', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 4
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$', 'z', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 4
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$', 'z', '$']
+Transitions: []
+
+FILTER level: 4
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$', 'z', '$', 'z', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 5
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$', 'z', '$', 'z', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$', 'z', '$', 'z', '$']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$', 'z', '$', 'z', '$', 'z', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 6
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$', 'z', '$', 'z', '$', 'z', '$']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$', 'z', '$', 'z', '$', 'y', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 6
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$', 'z', '$', 'z', '$', 'y', '$']
+Transitions: []
+
+FILTER level: 4
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$', 'z', '$', 'y', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 5
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$', 'z', '$', 'y', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$', 'z', '$', 'y', '$']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$', 'z', '$', 'y', '$', 'z', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 6
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$', 'z', '$', 'y', '$', 'z', '$']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$', 'z', '$', 'y', '$', 'y', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 6
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$', 'z', '$', 'y', '$', 'y', '$']
+Transitions: []
+
+FILTER level: 3
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$', 'y', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 4
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$', 'y', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 4
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$', 'y', '$']
+Transitions: []
+
+FILTER level: 4
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$', 'y', '$', 'z', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 5
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$', 'y', '$', 'z', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$', 'y', '$', 'z', '$']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$', 'y', '$', 'z', '$', 'z', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 6
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$', 'y', '$', 'z', '$', 'z', '$']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$', 'y', '$', 'z', '$', 'y', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 6
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$', 'y', '$', 'z', '$', 'y', '$']
+Transitions: []
+
+FILTER level: 4
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$', 'y', '$', 'y', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 5
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$', 'y', '$', 'y', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$', 'y', '$', 'y', '$']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$', 'y', '$', 'y', '$', 'z', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 6
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$', 'y', '$', 'y', '$', 'z', '$']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$', 'y', '$', 'y', '$', 'y', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 6
+Input sequence: 'x#x#$z$y$'
+Stack: ['$', 'y', '$', 'y', '$', 'y', '$', 'y', '$']
+Transitions: []
+
+FILTER level: 1
+Input sequence: 'x#x#$z$y$'
+Stack: ['X']
+Transitions: [(('q', None, 'X'), ('q', ('Y', '#', 'x'))), (('q', None, 'X'), ('q', ('µ', 'Î'))), (('q', None, 'X'), ('q', ('X', '#', 'x')))]
+
+FILTER level: 2
+Input sequence: 'x#x#$z$y$'
+Stack: ['Y', '#', 'x']
+Transitions: [(('q', 'x', 'x'), ('q', None))]
+
+FILTER level: 3
+Input sequence: '#x#$z$y$'
+Stack: ['Y', '#']
+Transitions: [(('q', '#', '#'), ('q', None))]
+
+FILTER level: 4
+Input sequence: 'x#$z$y$'
+Stack: ['Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 5
+Input sequence: 'x#$z$y$'
+Stack: ['µ', 'Î']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'x#$z$y$'
+Stack: ['$']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'x#$z$y$'
+Stack: ['$', 'z', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 6
+Input sequence: 'x#$z$y$'
+Stack: ['$', 'z', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 6
+Input sequence: 'x#$z$y$'
+Stack: ['$', 'z', '$']
+Transitions: []
+
+FILTER level: 6
+Input sequence: 'x#$z$y$'
+Stack: ['$', 'z', '$', 'z', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 7
+Input sequence: 'x#$z$y$'
+Stack: ['$', 'z', '$', 'z', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 7
+Input sequence: 'x#$z$y$'
+Stack: ['$', 'z', '$', 'z', '$']
+Transitions: []
+
+FILTER level: 7
+Input sequence: 'x#$z$y$'
+Stack: ['$', 'z', '$', 'z', '$', 'z', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 8
+Input sequence: 'x#$z$y$'
+Stack: ['$', 'z', '$', 'z', '$', 'z', '$']
+Transitions: []
+
+FILTER level: 7
+Input sequence: 'x#$z$y$'
+Stack: ['$', 'z', '$', 'z', '$', 'y', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 8
+Input sequence: 'x#$z$y$'
+Stack: ['$', 'z', '$', 'z', '$', 'y', '$']
+Transitions: []
+
+FILTER level: 6
+Input sequence: 'x#$z$y$'
+Stack: ['$', 'z', '$', 'y', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 7
+Input sequence: 'x#$z$y$'
+Stack: ['$', 'z', '$', 'y', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 7
+Input sequence: 'x#$z$y$'
+Stack: ['$', 'z', '$', 'y', '$']
+Transitions: []
+
+FILTER level: 7
+Input sequence: 'x#$z$y$'
+Stack: ['$', 'z', '$', 'y', '$', 'z', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 8
+Input sequence: 'x#$z$y$'
+Stack: ['$', 'z', '$', 'y', '$', 'z', '$']
+Transitions: []
+
+FILTER level: 7
+Input sequence: 'x#$z$y$'
+Stack: ['$', 'z', '$', 'y', '$', 'y', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 8
+Input sequence: 'x#$z$y$'
+Stack: ['$', 'z', '$', 'y', '$', 'y', '$']
+Transitions: []
+
+FILTER level: 5
+Input sequence: 'x#$z$y$'
+Stack: ['$', 'y', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 6
+Input sequence: 'x#$z$y$'
+Stack: ['$', 'y', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 6
+Input sequence: 'x#$z$y$'
+Stack: ['$', 'y', '$']
+Transitions: []
+
+FILTER level: 6
+Input sequence: 'x#$z$y$'
+Stack: ['$', 'y', '$', 'z', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 7
+Input sequence: 'x#$z$y$'
+Stack: ['$', 'y', '$', 'z', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 7
+Input sequence: 'x#$z$y$'
+Stack: ['$', 'y', '$', 'z', '$']
+Transitions: []
+
+FILTER level: 7
+Input sequence: 'x#$z$y$'
+Stack: ['$', 'y', '$', 'z', '$', 'z', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 8
+Input sequence: 'x#$z$y$'
+Stack: ['$', 'y', '$', 'z', '$', 'z', '$']
+Transitions: []
+
+FILTER level: 7
+Input sequence: 'x#$z$y$'
+Stack: ['$', 'y', '$', 'z', '$', 'y', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 8
+Input sequence: 'x#$z$y$'
+Stack: ['$', 'y', '$', 'z', '$', 'y', '$']
+Transitions: []
+
+FILTER level: 6
+Input sequence: 'x#$z$y$'
+Stack: ['$', 'y', '$', 'y', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 7
+Input sequence: 'x#$z$y$'
+Stack: ['$', 'y', '$', 'y', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 7
+Input sequence: 'x#$z$y$'
+Stack: ['$', 'y', '$', 'y', '$']
+Transitions: []
+
+FILTER level: 7
+Input sequence: 'x#$z$y$'
+Stack: ['$', 'y', '$', 'y', '$', 'z', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 8
+Input sequence: 'x#$z$y$'
+Stack: ['$', 'y', '$', 'y', '$', 'z', '$']
+Transitions: []
+
+FILTER level: 7
+Input sequence: 'x#$z$y$'
+Stack: ['$', 'y', '$', 'y', '$', 'y', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 8
+Input sequence: 'x#$z$y$'
+Stack: ['$', 'y', '$', 'y', '$', 'y', '$']
+Transitions: []
+
+FILTER level: 2
+Input sequence: 'x#x#$z$y$'
+Stack: ['µ', 'Î']
+Transitions: []
+
+FILTER level: 2
+Input sequence: 'x#x#$z$y$'
+Stack: ['X', '#', 'x']
+Transitions: [(('q', 'x', 'x'), ('q', None))]
+
+FILTER level: 3
+Input sequence: '#x#$z$y$'
+Stack: ['X', '#']
+Transitions: [(('q', '#', '#'), ('q', None))]
+
+FILTER level: 4
+Input sequence: 'x#$z$y$'
+Stack: ['X']
+Transitions: [(('q', None, 'X'), ('q', ('Y', '#', 'x'))), (('q', None, 'X'), ('q', ('µ', 'Î'))), (('q', None, 'X'), ('q', ('X', '#', 'x')))]
+
+FILTER level: 5
+Input sequence: 'x#$z$y$'
+Stack: ['Y', '#', 'x']
+Transitions: [(('q', 'x', 'x'), ('q', None))]
+
+FILTER level: 6
+Input sequence: '#$z$y$'
+Stack: ['Y', '#']
+Transitions: [(('q', '#', '#'), ('q', None))]
+
+FILTER level: 7
+Input sequence: '$z$y$'
+Stack: ['Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 8
+Input sequence: '$z$y$'
+Stack: ['µ', 'Î']
+Transitions: []
+
+FILTER level: 8
+Input sequence: '$z$y$'
+Stack: ['$']
+Transitions: [(('q', '$', '$'), ('q', None))]
+
+FILTER level: 9
+Input sequence: 'z$y$'
+Stack: []
+Transitions: []
+
+FILTER level: 8
+Input sequence: '$z$y$'
+Stack: ['$', 'z', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 9
+Input sequence: '$z$y$'
+Stack: ['$', 'z', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 9
+Input sequence: '$z$y$'
+Stack: ['$', 'z', '$']
+Transitions: [(('q', '$', '$'), ('q', None))]
+
+FILTER level: 10
+Input sequence: 'z$y$'
+Stack: ['$', 'z']
+Transitions: [(('q', 'z', 'z'), ('q', None))]
+
+FILTER level: 11
+Input sequence: '$y$'
+Stack: ['$']
+Transitions: [(('q', '$', '$'), ('q', None))]
+
+FILTER level: 12
+Input sequence: 'y$'
+Stack: []
+Transitions: []
+
+FILTER level: 9
+Input sequence: '$z$y$'
+Stack: ['$', 'z', '$', 'z', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 10
+Input sequence: '$z$y$'
+Stack: ['$', 'z', '$', 'z', '$']
+Transitions: [(('q', '$', '$'), ('q', None))]
+
+FILTER level: 11
+Input sequence: 'z$y$'
+Stack: ['$', 'z', '$', 'z']
+Transitions: [(('q', 'z', 'z'), ('q', None))]
+
+FILTER level: 12
+Input sequence: '$y$'
+Stack: ['$', 'z', '$']
+Transitions: [(('q', '$', '$'), ('q', None))]
+
+FILTER level: 13
+Input sequence: 'y$'
+Stack: ['$', 'z']
+Transitions: []
+
+FILTER level: 9
+Input sequence: '$z$y$'
+Stack: ['$', 'z', '$', 'y', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 10
+Input sequence: '$z$y$'
+Stack: ['$', 'z', '$', 'y', '$']
+Transitions: [(('q', '$', '$'), ('q', None))]
+
+FILTER level: 11
+Input sequence: 'z$y$'
+Stack: ['$', 'z', '$', 'y']
+Transitions: []
+
+FILTER level: 8
+Input sequence: '$z$y$'
+Stack: ['$', 'y', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 9
+Input sequence: '$z$y$'
+Stack: ['$', 'y', 'µ', 'Î']
+Transitions: []
+
+FILTER level: 9
+Input sequence: '$z$y$'
+Stack: ['$', 'y', '$']
+Transitions: [(('q', '$', '$'), ('q', None))]
+
+FILTER level: 10
+Input sequence: 'z$y$'
+Stack: ['$', 'y']
+Transitions: []
+
+FILTER level: 9
+Input sequence: '$z$y$'
+Stack: ['$', 'y', '$', 'z', 'Y']
+Transitions: [(('q', None, 'Y'), ('q', ('µ', 'Î'))), (('q', None, 'Y'), ('q', ('$',))), (('q', None, 'Y'), ('q', ('$', 'z', 'Y'))), (('q', None, 'Y'), ('q', ('$', 'y', 'Y')))]
+
+FILTER level: 10
+Input sequence: '$z$y$'
+Stack: ['$', 'y', '$', 'z', '$']
+Transitions: [(('q', '$', '$'), ('q', None))]
+
+FILTER level: 11
+Input sequence: 'z$y$'
+Stack: ['$', 'y', '$', 'z']
+Transitions: [(('q', 'z', 'z'), ('q', None))]
+
+FILTER level: 12
+Input sequence: '$y$'
+Stack: ['$', 'y', '$']
+Transitions: [(('q', '$', '$'), ('q', None))]
+
+FILTER level: 13
+Input sequence: 'y$'
+Stack: ['$', 'y']
+Transitions: [(('q', 'y', 'y'), ('q', None))]
+
+FILTER level: 14
+Input sequence: '$'
+Stack: ['$']
+Transitions: [(('q', '$', '$'), ('q', None))]
+
